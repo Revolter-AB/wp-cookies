@@ -1,0 +1,901 @@
+# Copyright (C) 2026 Revolter AB
+# This file is distributed under the GPL-2.0-or-later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Revolter Cookies 0.1.0\n"
+"Report-Msgid-Bugs-To: https://revolter.se\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-11-19T00:42:29+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: revolter-cookies\n"
+
+#. Plugin Name of the plugin
+#: revolter-cookies.php
+msgid "Revolter Cookies"
+msgstr ""
+
+#. Description of the plugin
+#: revolter-cookies.php
+msgid "Self-contained cookie consent for WordPress: local scan, real cookie declaration, editable banner and real blocking of scripts and embeds until consent."
+msgstr ""
+
+#. Author of the plugin
+#: revolter-cookies.php
+msgid "Revolter AB"
+msgstr ""
+
+#. Author URI of the plugin
+#: revolter-cookies.php
+msgid "https://revolter.se"
+msgstr ""
+
+#: includes/admin/class-log-page.php:162
+#: includes/admin/class-overview-page.php:53
+msgid "Invalid request."
+msgstr ""
+
+#: includes/admin/class-menu.php:86
+#: templates/admin/overview.php:33
+msgid "Cookies"
+msgstr ""
+
+#: includes/admin/class-menu.php:90
+msgid "Overview"
+msgstr ""
+
+#: includes/admin/class-menu.php:91
+#: templates/admin/banner.php:20
+msgid "Banner"
+msgstr ""
+
+#: includes/admin/class-menu.php:92
+#: templates/admin/company.php:18
+msgid "Company details"
+msgstr ""
+
+#: includes/admin/class-menu.php:93
+#: templates/admin/log.php:18
+msgid "Consent log"
+msgstr ""
+
+#: includes/admin/class-menu.php:174
+msgid "You are not allowed to do this."
+msgstr ""
+
+#. translators: %s: list of plugin names.
+#: includes/class-conflicts.php:116
+#, php-format
+msgid "Revolter Cookies conflicts with %s."
+msgstr ""
+
+#. translators: %s: list of plugin names.
+#: includes/class-conflicts.php:121
+#, php-format
+msgid "Two cookie plugins will show two banners and block scripts unpredictably. Deactivate and delete %s, then run a new scan."
+msgstr ""
+
+#: includes/class-duration.php:49
+#: templates/admin/overview.php:202
+msgid "Session"
+msgstr ""
+
+#: includes/class-duration.php:52
+#: templates/admin/overview.php:203
+msgid "Persistent"
+msgstr ""
+
+#. translators: %d: number of minutes.
+#: includes/class-duration.php:58
+#, php-format
+msgid "%d minute"
+msgid_plural "%d minutes"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %d: number of hours.
+#: includes/class-duration.php:62
+#, php-format
+msgid "%d hour"
+msgid_plural "%d hours"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %d: number of days.
+#: includes/class-duration.php:66
+#, php-format
+msgid "%d day"
+msgid_plural "%d days"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %d: number of months.
+#: includes/class-duration.php:70
+#, php-format
+msgid "%d month"
+msgid_plural "%d months"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %d: number of years.
+#: includes/class-duration.php:74
+#, php-format
+msgid "%d year"
+msgid_plural "%d years"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: page number, 2: number of pages, 3: phase, e.g. "checking without consent".
+#: includes/class-scanner.php:64
+#, php-format
+msgid "Scanning page %1$d of %2$d (%3$s)"
+msgstr ""
+
+#: includes/class-scanner.php:65
+msgid "checking without consent"
+msgstr ""
+
+#: includes/class-scanner.php:66
+msgid "checking with consent"
+msgstr ""
+
+#: includes/class-scanner.php:67
+msgid "checking cookies set by the server"
+msgstr ""
+
+#: includes/class-scanner.php:68
+msgid "Saving the results…"
+msgstr ""
+
+#. translators: %s: page URL.
+#: includes/class-scanner.php:70
+#, php-format
+msgid "Could not load %s. It is recorded as failed."
+msgstr ""
+
+#. translators: %s: page URL.
+#: includes/class-scanner.php:72
+#, php-format
+msgid "Could not save the result for %s."
+msgstr ""
+
+#: includes/class-scanner.php:73
+msgid "The scan could not be started."
+msgstr ""
+
+#: includes/class-scanner.php:74
+msgid "The scan could not be finished."
+msgstr ""
+
+#. translators: 1: pages scanned, 2: pages that failed, 3: cookies declared, 4: cookies that need review.
+#: includes/class-scanner.php:76
+#, php-format
+msgid "Scan complete. Pages scanned: %1$d (failed: %2$d). Cookies declared: %3$d. Needs review: %4$d."
+msgstr ""
+
+#: includes/class-scanner.php:77
+msgid "No page could be scanned, so the cookie list was not changed. Check that the site loads for logged-in administrators and try again."
+msgstr ""
+
+#: includes/class-texts.php:24
+msgid "We use cookies"
+msgstr ""
+
+#: includes/class-texts.php:25
+msgid "We use necessary cookies to make this website work. With your consent, we also use cookies for statistics and marketing. You can change or withdraw your consent at any time."
+msgstr ""
+
+#: includes/class-texts.php:26
+msgid "Read our cookie policy"
+msgstr ""
+
+#: includes/class-texts.php:27
+msgid "Accept all"
+msgstr ""
+
+#: includes/class-texts.php:28
+msgid "Reject all"
+msgstr ""
+
+#: includes/class-texts.php:29
+msgid "Customise"
+msgstr ""
+
+#: includes/class-texts.php:30
+msgid "Save choices"
+msgstr ""
+
+#: includes/class-texts.php:31
+msgid "Close"
+msgstr ""
+
+#: includes/class-texts.php:32
+#: includes/class-texts.php:35
+msgid "Cookie settings"
+msgstr ""
+
+#: includes/class-texts.php:33
+msgid "Made with care by"
+msgstr ""
+
+#: includes/class-texts.php:34
+msgid "Always on"
+msgstr ""
+
+#: includes/class-texts.php:36
+msgid "Choose which types of cookies you accept. Necessary cookies cannot be switched off because the website does not work without them."
+msgstr ""
+
+#: includes/class-texts.php:49
+msgid "Necessary"
+msgstr ""
+
+#: includes/class-texts.php:51
+msgid "Preferences"
+msgstr ""
+
+#: includes/class-texts.php:53
+msgid "Statistics"
+msgstr ""
+
+#: includes/class-texts.php:55
+msgid "Marketing"
+msgstr ""
+
+#: includes/class-texts.php:57
+msgid "Unclassified"
+msgstr ""
+
+#: includes/class-texts.php:70
+msgid "Required for basic functions such as security and remembering your cookie choice."
+msgstr ""
+
+#: includes/class-texts.php:72
+msgid "Remember your choices, such as language."
+msgstr ""
+
+#: includes/class-texts.php:74
+msgid "Help us understand how the website is used, through anonymised statistics."
+msgstr ""
+
+#: includes/class-texts.php:76
+msgid "Used to show relevant ads and embedded content such as YouTube."
+msgstr ""
+
+#: includes/class-texts.php:78
+msgid "Cookies that have not yet been classified."
+msgstr ""
+
+#. translators: %d: number of cookies.
+#: includes/class-texts.php:90
+#, php-format
+msgid "%d cookie"
+msgid_plural "%d cookies"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/class-texts.php:102
+msgctxt "category in a sentence"
+msgid "preferences"
+msgstr ""
+
+#: includes/class-texts.php:104
+msgctxt "category in a sentence"
+msgid "statistics"
+msgstr ""
+
+#: includes/class-texts.php:107
+msgctxt "category in a sentence"
+msgid "marketing"
+msgstr ""
+
+#. translators: 1: service name, 2: category in a sentence, e.g. marketing.
+#: includes/class-texts.php:122
+#, php-format
+msgid "This content comes from %1$s, which uses cookies for %2$s. Accept %2$s cookies to show it."
+msgstr ""
+
+#: includes/class-texts.php:123
+msgid "Accept and show"
+msgstr ""
+
+#. translators: %s: service name.
+#: includes/class-texts.php:125
+#, php-format
+msgid "Open on %s"
+msgstr ""
+
+#: includes/class-texts.php:138
+msgid "Used by the website to provide basic functionality."
+msgstr ""
+
+#: includes/class-texts.php:140
+msgid "Used by the website to remember your choices."
+msgstr ""
+
+#: includes/class-texts.php:142
+msgid "Used by the website for statistics."
+msgstr ""
+
+#: includes/class-texts.php:144
+msgid "Used by the website for marketing."
+msgstr ""
+
+#: includes/class-texts.php:146
+msgid "Not yet classified."
+msgstr ""
+
+#. translators: 1: company name, 2: organisation number.
+#: includes/class-texts.php:165
+#, php-format
+msgid "%1$s (org. no. %2$s)"
+msgstr ""
+
+#: includes/class-texts.php:170
+msgid "What are cookies?"
+msgstr ""
+
+#: includes/class-texts.php:171
+msgid "Cookies are small text files that are stored on your device when you visit a website. Some are necessary for the website to work; others are used for statistics or marketing and are only set if you accept them."
+msgstr ""
+
+#. translators: %1$s: company name.
+#: includes/class-texts.php:175
+#, php-format
+msgid "How %1$s uses cookies"
+msgstr ""
+
+#. translators: %d: number of cookies.
+#: includes/class-texts.php:177
+#, php-format
+msgid "This website uses %d cookie, divided into the categories below. The list is updated automatically when the website is scanned."
+msgid_plural "This website uses %d cookies, divided into the categories below. The list is updated automatically when the website is scanned."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/class-texts.php:180
+msgid "How to manage cookies"
+msgstr ""
+
+#: includes/class-texts.php:181
+msgid "You can change your choice at any time using the button below or the cookie settings icon on the website. You can also set your browser to block or delete cookies. Note that some parts of the website may not work correctly if you block necessary cookies."
+msgstr ""
+
+#: includes/class-texts.php:184
+#: includes/elementor/class-full-page-widget.php:81
+#: blocks/editor.js:41
+msgid "Legal basis"
+msgstr ""
+
+#: includes/class-texts.php:185
+msgid "Necessary cookies are used under the Swedish Electronic Communications Act (2022:482), chapter 9, section 28, and do not require consent. All other cookies are only used with your consent under Article 6(1)(a) of the GDPR."
+msgstr ""
+
+#: includes/class-texts.php:188
+#: includes/elementor/class-full-page-widget.php:82
+#: blocks/editor.js:42
+msgid "Your rights"
+msgstr ""
+
+#. translators: 1: company name, 2: contact email.
+#: includes/class-texts.php:190
+#, php-format
+msgid "You can change or withdraw your consent at any time. If you have questions about how we use cookies, contact %1$s at %2$s. You also have the right to lodge a complaint with the Swedish Authority for Privacy Protection (IMY)."
+msgstr ""
+
+#: includes/class-texts.php:202
+msgid "Cookie declaration"
+msgstr ""
+
+#. translators: %s: date.
+#: includes/class-texts.php:204
+#, php-format
+msgid "Last updated %s"
+msgstr ""
+
+#: includes/class-texts.php:205
+#: templates/admin/overview.php:102
+#: templates/admin/overview.php:187
+msgid "Name"
+msgstr ""
+
+#: includes/class-texts.php:206
+#: templates/admin/overview.php:103
+#: templates/admin/overview.php:194
+msgid "Provider"
+msgstr ""
+
+#: includes/class-texts.php:207
+#: templates/admin/overview.php:105
+msgid "Purpose"
+msgstr ""
+
+#: includes/class-texts.php:208
+#: templates/admin/overview.php:106
+#: templates/admin/overview.php:198
+msgid "Duration"
+msgstr ""
+
+#: includes/class-texts.php:219
+#: includes/elementor/class-full-page-widget.php:83
+#: blocks/editor.js:43
+msgid "Your consent"
+msgstr ""
+
+#. translators: 1: accepted categories, 2: date given, 3: consent ID.
+#: includes/class-texts.php:221
+#, php-format
+msgid "You have accepted: %1$s. Given %2$s · ID %3$s"
+msgstr ""
+
+#: includes/class-texts.php:222
+msgid "You have not made a choice yet."
+msgstr ""
+
+#: includes/class-texts.php:223
+msgid "Withdraw"
+msgstr ""
+
+#: includes/class-texts.php:224
+msgid "Change settings"
+msgstr ""
+
+#: includes/class-texts.php:225
+msgid "Change cookie settings"
+msgstr ""
+
+#: includes/elementor/class-cookies-table-widget.php:30
+msgid "Cookie table"
+msgstr ""
+
+#: includes/elementor/class-cookies-table-widget.php:61
+msgid "Table"
+msgstr ""
+
+#: includes/elementor/class-cookies-table-widget.php:68
+msgid "Show settings link"
+msgstr ""
+
+#: includes/elementor/class-cookies-table-widget.php:70
+#: includes/elementor/class-full-page-widget.php:91
+msgid "Show"
+msgstr ""
+
+#: includes/elementor/class-cookies-table-widget.php:71
+#: includes/elementor/class-full-page-widget.php:92
+msgid "Hide"
+msgstr ""
+
+#: includes/elementor/class-cookies-table-widget.php:81
+#: includes/elementor/class-full-page-widget.php:103
+msgid "Style"
+msgstr ""
+
+#: includes/elementor/class-cookies-table-widget.php:89
+#: includes/elementor/class-full-page-widget.php:114
+msgid "Heading typography"
+msgstr ""
+
+#: includes/elementor/class-cookies-table-widget.php:97
+#: includes/elementor/class-full-page-widget.php:130
+msgid "Body typography"
+msgstr ""
+
+#: includes/elementor/class-cookies-table-widget.php:104
+#: includes/elementor/class-full-page-widget.php:137
+msgid "Text colour"
+msgstr ""
+
+#: includes/elementor/class-full-page-widget.php:42
+msgid "Cookie policy (full page)"
+msgstr ""
+
+#: includes/elementor/class-full-page-widget.php:73
+#: blocks/editor.js:37
+msgid "Sections"
+msgstr ""
+
+#: includes/elementor/class-full-page-widget.php:78
+#: blocks/editor.js:38
+msgid "What are cookies"
+msgstr ""
+
+#: includes/elementor/class-full-page-widget.php:79
+#: blocks/editor.js:39
+msgid "How we use cookies"
+msgstr ""
+
+#: includes/elementor/class-full-page-widget.php:80
+#: blocks/editor.js:40
+msgid "Managing cookies"
+msgstr ""
+
+#: includes/elementor/class-full-page-widget.php:121
+msgid "Heading colour"
+msgstr ""
+
+#: includes/elementor/class-full-page-widget.php:146
+msgid "Section gap"
+msgstr ""
+
+#: includes/elementor/class-integration.php:77
+msgid "Table header background"
+msgstr ""
+
+#: includes/elementor/class-integration.php:85
+msgid "Border colour"
+msgstr ""
+
+#: includes/elementor/class-integration.php:95
+msgid "Cell padding"
+msgstr ""
+
+#: templates/admin/banner.php:22
+#: templates/admin/company.php:20
+#: templates/admin/overview.php:39
+msgid "Saved."
+msgstr ""
+
+#: templates/admin/banner.php:28
+msgid "Accent colour"
+msgstr ""
+
+#: templates/admin/banner.php:32
+msgid "Settings button position"
+msgstr ""
+
+#: templates/admin/banner.php:35
+msgid "Left"
+msgstr ""
+
+#: templates/admin/banner.php:36
+msgid "Right"
+msgstr ""
+
+#: templates/admin/banner.php:41
+msgid "Cookie policy page"
+msgstr ""
+
+#: templates/admin/banner.php:49
+msgid "Detect automatically"
+msgstr ""
+
+#. translators: %s: page title.
+#: templates/admin/banner.php:58
+#, php-format
+msgid "Auto-detected: %s"
+msgstr ""
+
+#: templates/admin/banner.php:66
+msgid "Advanced"
+msgstr ""
+
+#: templates/admin/banner.php:69
+msgid "Google Tag Manager category"
+msgstr ""
+
+#: templates/admin/banner.php:79
+msgid "Manual blocking rules"
+msgstr ""
+
+#: templates/admin/banner.php:82
+msgid "One rule per line: pattern | category. Example: hotjar.com | statistics"
+msgstr ""
+
+#: templates/admin/company.php:22
+msgid "These details appear in your cookie declaration."
+msgstr ""
+
+#: templates/admin/company.php:27
+msgid "Company name"
+msgstr ""
+
+#: templates/admin/company.php:31
+msgid "Organisation number"
+msgstr ""
+
+#: templates/admin/company.php:35
+msgid "Contact email"
+msgstr ""
+
+#: templates/admin/log.php:22
+#: templates/admin/log.php:30
+msgid "Consent ID"
+msgstr ""
+
+#: templates/admin/log.php:23
+msgid "Start of the consent ID"
+msgstr ""
+
+#: templates/admin/log.php:24
+msgid "Search"
+msgstr ""
+
+#: templates/admin/log.php:31
+msgid "Date (UTC)"
+msgstr ""
+
+#: templates/admin/log.php:32
+msgid "Categories"
+msgstr ""
+
+#: templates/admin/log.php:33
+msgid "Policy version"
+msgstr ""
+
+#: templates/admin/log.php:34
+msgid "Action"
+msgstr ""
+
+#: templates/admin/log.php:35
+msgid "Language"
+msgstr ""
+
+#: templates/admin/log.php:36
+msgid "Export"
+msgstr ""
+
+#: templates/admin/log.php:41
+msgid "No entries."
+msgstr ""
+
+#: templates/admin/log.php:51
+msgid "Export this entry as CSV"
+msgstr ""
+
+#: templates/admin/log.php:51
+msgid "CSV"
+msgstr ""
+
+#: templates/admin/log.php:58
+msgid "Export as CSV"
+msgstr ""
+
+#. translators: %1$s: maximum number of rows in one export.
+#: templates/admin/log.php:66
+#, php-format
+msgid "This range has more than %1$s entries. Choose a shorter range, or download the first %1$s."
+msgstr ""
+
+#. translators: %s: maximum number of rows in one export.
+#: templates/admin/log.php:81
+#, php-format
+msgid "Download the first %s"
+msgstr ""
+
+#: templates/admin/log.php:90
+msgid "From"
+msgstr ""
+
+#: templates/admin/log.php:92
+msgid "To"
+msgstr ""
+
+#: templates/admin/log.php:94
+msgid "Download CSV"
+msgstr ""
+
+#: templates/admin/overview.php:36
+msgid "Cookie library could not be loaded; blocking of known services is disabled."
+msgstr ""
+
+#: templates/admin/overview.php:42
+msgid "An item with that name already exists."
+msgstr ""
+
+#: templates/admin/overview.php:47
+#: templates/admin/overview.php:49
+msgid "Scan your website"
+msgstr ""
+
+#: templates/admin/overview.php:48
+msgid "The scan visits your pages, finds the cookies and scripts they use and builds your cookie declaration."
+msgstr ""
+
+#: templates/admin/overview.php:54
+msgid "Rescan website"
+msgstr ""
+
+#: templates/admin/overview.php:58
+msgid "Last scan failed"
+msgstr ""
+
+#. translators: 1: date and time, 2: number of pages.
+#: templates/admin/overview.php:61
+#, php-format
+msgid "Last scan: %1$s · %2$d page"
+msgid_plural "Last scan: %1$s · %2$d pages"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %d: number of pages that failed.
+#: templates/admin/overview.php:64
+#, php-format
+msgid "%d failed"
+msgstr ""
+
+#: templates/admin/overview.php:73
+msgid "Rescan recommended: plugins or the theme have changed since the last scan."
+msgstr ""
+
+#: templates/admin/overview.php:78
+msgid "Cookies declared"
+msgstr ""
+
+#: templates/admin/overview.php:79
+msgid "Needs review"
+msgstr ""
+
+#: templates/admin/overview.php:80
+msgid "Scripts blocked until consent"
+msgstr ""
+
+#: templates/admin/overview.php:81
+#: templates/admin/overview.php:125
+#: templates/admin/overview.php:126
+msgid "Set before consent"
+msgstr ""
+
+#. translators: %d: number of items that need review.
+#: templates/admin/overview.php:90
+#, php-format
+msgid "%d item needs your review. Choose a category for it below."
+msgid_plural "%d items need your review. Choose a category for each below."
+msgstr[0] ""
+msgstr[1] ""
+
+#: templates/admin/overview.php:98
+msgid "Cookies and services"
+msgstr ""
+
+#: templates/admin/overview.php:104
+#: templates/admin/overview.php:196
+msgid "Category"
+msgstr ""
+
+#: templates/admin/overview.php:107
+msgid "Source"
+msgstr ""
+
+#: templates/admin/overview.php:122
+msgid "Domain"
+msgstr ""
+
+#: templates/admin/overview.php:122
+#: templates/admin/overview.php:192
+msgid "Storage"
+msgstr ""
+
+#. translators: %s: list of page URLs.
+#: templates/admin/overview.php:135
+#, php-format
+msgid "Found on: %s"
+msgstr ""
+
+#: templates/admin/overview.php:147
+msgid "Save"
+msgstr ""
+
+#: templates/admin/overview.php:153
+msgid "Edit purpose"
+msgstr ""
+
+#: templates/admin/overview.php:154
+#: templates/admin/overview.php:211
+msgid "Purpose (Swedish)"
+msgstr ""
+
+#: templates/admin/overview.php:156
+#: templates/admin/overview.php:213
+msgid "Purpose (English)"
+msgstr ""
+
+#: templates/admin/overview.php:158
+msgid "Leave both empty to use the standard description."
+msgstr ""
+
+#: templates/admin/overview.php:170
+msgid "Delete"
+msgstr ""
+
+#: templates/admin/overview.php:182
+msgid "Add cookie manually"
+msgstr ""
+
+#: templates/admin/overview.php:189
+msgid "Type"
+msgstr ""
+
+#: templates/admin/overview.php:191
+msgid "Cookie"
+msgstr ""
+
+#: templates/admin/overview.php:201
+msgid "Duration unit"
+msgstr ""
+
+#: templates/admin/overview.php:204
+msgid "minutes"
+msgstr ""
+
+#: templates/admin/overview.php:205
+msgid "hours"
+msgstr ""
+
+#: templates/admin/overview.php:206
+msgid "days"
+msgstr ""
+
+#: templates/admin/overview.php:207
+msgid "months"
+msgstr ""
+
+#: templates/admin/overview.php:208
+msgid "years"
+msgstr ""
+
+#: templates/admin/overview.php:215
+msgid "Third party"
+msgstr ""
+
+#: templates/admin/overview.php:216
+msgid "Set by a third party"
+msgstr ""
+
+#: templates/admin/overview.php:218
+msgid "Add cookie"
+msgstr ""
+
+#: templates/admin/overview.php:224
+msgid "Blocked until consent"
+msgstr ""
+
+#: templates/admin/overview.php:232
+msgid "Nothing is blocked yet."
+msgstr ""
+
+#: templates/admin/overview.php:236
+msgid "Languages"
+msgstr ""
+
+#. translators: %s: name of the multilingual system, for example wpml.
+#: templates/admin/overview.php:240
+#, php-format
+msgid "Language source: %s"
+msgstr ""
+
+#: blocks/editor.js:26
+msgid "Preview unavailable in this editor."
+msgstr ""
+
+#: blocks/editor.js:51
+msgid "Settings"
+msgstr ""
+
+#: blocks/editor.js:52
+msgid "Show link to change settings"
+msgstr ""
+
+#: blocks/cookies-table/block.json
+msgctxt "block title"
+msgid "Cookie table"
+msgstr ""
+
+#: blocks/cookies-table/block.json
+msgctxt "block description"
+msgid "The live cookie declaration table."
+msgstr ""
+
+#: blocks/full-page/block.json
+msgctxt "block title"
+msgid "Cookie policy (full page)"
+msgstr ""
+
+#: blocks/full-page/block.json
+msgctxt "block description"
+msgid "The full cookie policy with the live cookie declaration."
+msgstr ""

@@ -1,0 +1,1422 @@
+{
+  "version": 1,
+  "services": [
+    {
+      "id": "revolter-cookies",
+      "label": "Revolter Cookies",
+      "provider": "Revolter",
+      "category": "necessary",
+      "scripts": [],
+      "inline": [],
+      "iframes": [],
+      "domains": [],
+      "cookies": [
+        {
+          "name": "rc_consent",
+          "match": "exact",
+          "type": "cookie",
+          "third_party": false,
+          "duration": {
+            "n": 1,
+            "unit": "year"
+          },
+          "purpose": {
+            "en": "Stores the visitor's cookie choices.",
+            "sv": "Sparar besökarens cookieval."
+          }
+        }
+      ]
+    },
+    {
+      "id": "wordpress",
+      "label": "WordPress",
+      "provider": "WordPress",
+      "category": "necessary",
+      "scripts": [],
+      "inline": [],
+      "iframes": [],
+      "domains": [],
+      "cookies": [
+        {
+          "name": "wordpress_test_cookie",
+          "match": "exact",
+          "type": "cookie",
+          "third_party": false,
+          "duration": "session",
+          "purpose": {
+            "en": "Checks that the browser accepts cookies.",
+            "sv": "Kontrollerar att webbläsaren accepterar cookies."
+          }
+        },
+        {
+          "name": "wordpress_logged_in_",
+          "match": "prefix",
+          "type": "cookie",
+          "third_party": false,
+          "duration": "session",
+          "purpose": {
+            "en": "Keeps a user signed in to the site.",
+            "sv": "Håller en användare inloggad på webbplatsen."
+          }
+        },
+        {
+          "name": "wordpress_sec_",
+          "match": "prefix",
+          "type": "cookie",
+          "third_party": false,
+          "duration": "session",
+          "purpose": {
+            "en": "Keeps a user signed in securely to the admin area.",
+            "sv": "Håller en användare säkert inloggad i adminytan."
+          }
+        },
+        {
+          "name": "wp-settings-time-",
+          "match": "prefix",
+          "type": "cookie",
+          "third_party": false,
+          "duration": {
+            "n": 1,
+            "unit": "year"
+          },
+          "purpose": {
+            "en": "Records when a signed-in user's interface settings were saved.",
+            "sv": "Anger när en inloggad användares gränssnittsinställningar sparades."
+          }
+        },
+        {
+          "name": "wp-settings-",
+          "match": "prefix",
+          "type": "cookie",
+          "third_party": false,
+          "duration": {
+            "n": 1,
+            "unit": "year"
+          },
+          "purpose": {
+            "en": "Saves a signed-in user's interface settings.",
+            "sv": "Sparar en inloggad användares gränssnittsinställningar."
+          }
+        },
+        {
+          "name": "wpEmojiSettingsSupports",
+          "match": "exact",
+          "type": "storage",
+          "third_party": false,
+          "duration": "session",
+          "purpose": {
+            "en": "Remembers which emoji the browser can display, so the check is not repeated on every page.",
+            "sv": "Kommer ihåg vilka emojier webbläsaren kan visa så att kontrollen inte görs på varje sida."
+          }
+        }
+      ]
+    },
+    {
+      "id": "wp-consent-api",
+      "label": "WP Consent API",
+      "provider": "WordPress",
+      "category": "necessary",
+      "scripts": [],
+      "inline": [],
+      "iframes": [],
+      "domains": [],
+      "cookies": [
+        {
+          "name": "wp_consent_",
+          "match": "prefix",
+          "type": "cookie",
+          "third_party": false,
+          "duration": {
+            "n": 1,
+            "unit": "year"
+          },
+          "purpose": {
+            "en": "Shares the visitor's cookie choices with other plugins on the site.",
+            "sv": "Delar besökarens cookieval med andra tillägg på webbplatsen."
+          }
+        }
+      ]
+    },
+    {
+      "id": "woocommerce",
+      "label": "WooCommerce",
+      "provider": "WooCommerce",
+      "category": "necessary",
+      "scripts": [],
+      "inline": [],
+      "iframes": [],
+      "domains": [],
+      "cookies": [
+        {
+          "name": "woocommerce_cart_hash",
+          "match": "exact",
+          "type": "cookie",
+          "third_party": false,
+          "duration": "session",
+          "purpose": {
+            "en": "Detects changes in the shopping cart.",
+            "sv": "Upptäcker ändringar i varukorgen."
+          }
+        },
+        {
+          "name": "woocommerce_items_in_cart",
+          "match": "exact",
+          "type": "cookie",
+          "third_party": false,
+          "duration": "session",
+          "purpose": {
+            "en": "Records whether the shopping cart has items.",
+            "sv": "Anger om varukorgen innehåller varor."
+          }
+        },
+        {
+          "name": "wp_woocommerce_session_",
+          "match": "prefix",
+          "type": "cookie",
+          "third_party": false,
+          "duration": {
+            "n": 2,
+            "unit": "day"
+          },
+          "purpose": {
+            "en": "Keeps the visitor's cart and checkout session.",
+            "sv": "Behåller besökarens varukorg och kassasession."
+          }
+        },
+        {
+          "name": "woocommerce_recently_viewed",
+          "match": "exact",
+          "type": "cookie",
+          "third_party": false,
+          "duration": "session",
+          "purpose": {
+            "en": "Remembers recently viewed products.",
+            "sv": "Kommer ihåg nyligen visade produkter."
+          }
+        },
+        {
+          "name": "store_notice",
+          "match": "prefix",
+          "type": "cookie",
+          "third_party": false,
+          "duration": "session",
+          "purpose": {
+            "en": "Remembers that the store notice was dismissed.",
+            "sv": "Kommer ihåg att butiksmeddelandet stängdes."
+          }
+        }
+      ]
+    },
+    {
+      "id": "woocommerce-order-attribution",
+      "label": "WooCommerce Order Attribution",
+      "provider": "WooCommerce (Automattic)",
+      "category": "marketing",
+      "scripts": [
+        "woocommerce/assets/js/sourcebuster/",
+        "woocommerce/assets/js/frontend/order-attribution"
+      ],
+      "inline": [],
+      "iframes": [],
+      "domains": [],
+      "cookies": [
+        {
+          "name": "sbjs_",
+          "match": "prefix",
+          "type": "cookie",
+          "third_party": false,
+          "duration": {
+            "n": 6,
+            "unit": "month"
+          },
+          "purpose": {
+            "en": "Records where the visitor came from, such as a campaign or search engine, so orders can be attributed to marketing channels.",
+            "sv": "Registrerar varifrån besökaren kom, till exempel en kampanj eller sökmotor, så att beställningar kan kopplas till marknadsföringskanaler."
+          }
+        }
+      ]
+    },
+    {
+      "id": "wpml",
+      "label": "WPML",
+      "provider": "OnTheGoSystems",
+      "category": "necessary",
+      "scripts": [],
+      "inline": [],
+      "iframes": [],
+      "domains": [],
+      "cookies": [
+        {
+          "name": "wp-wpml_current_language",
+          "match": "exact",
+          "type": "cookie",
+          "third_party": false,
+          "duration": "session",
+          "purpose": {
+            "en": "Stores the language the visitor is viewing.",
+            "sv": "Sparar vilket språk besökaren tittar på."
+          }
+        },
+        {
+          "name": "_icl_current_language",
+          "match": "exact",
+          "type": "cookie",
+          "third_party": false,
+          "duration": {
+            "n": 1,
+            "unit": "day"
+          },
+          "purpose": {
+            "en": "Stores the language the visitor is viewing.",
+            "sv": "Sparar vilket språk besökaren tittar på."
+          }
+        },
+        {
+          "name": "_icl_visitor_lang_js",
+          "match": "exact",
+          "type": "cookie",
+          "third_party": false,
+          "duration": {
+            "n": 1,
+            "unit": "day"
+          },
+          "purpose": {
+            "en": "Stores the visitor's language for redirects.",
+            "sv": "Sparar besökarens språk för omdirigering."
+          }
+        }
+      ]
+    },
+    {
+      "id": "polylang",
+      "label": "Polylang",
+      "provider": "Polylang",
+      "category": "necessary",
+      "scripts": [],
+      "inline": [],
+      "iframes": [],
+      "domains": [],
+      "cookies": [
+        {
+          "name": "pll_language",
+          "match": "exact",
+          "type": "cookie",
+          "third_party": false,
+          "duration": {
+            "n": 1,
+            "unit": "year"
+          },
+          "purpose": {
+            "en": "Stores the language the visitor chose.",
+            "sv": "Sparar språket som besökaren valt."
+          }
+        }
+      ]
+    },
+    {
+      "id": "translatepress",
+      "label": "TranslatePress",
+      "provider": "Cozmoslabs",
+      "category": "necessary",
+      "scripts": [],
+      "inline": [],
+      "iframes": [],
+      "domains": [],
+      "cookies": [
+        {
+          "name": "trp_language",
+          "match": "exact",
+          "type": "cookie",
+          "third_party": false,
+          "duration": {
+            "n": 30,
+            "unit": "day"
+          },
+          "purpose": {
+            "en": "Stores the language the visitor chose.",
+            "sv": "Sparar språket som besökaren valt."
+          }
+        }
+      ]
+    },
+    {
+      "id": "elementor",
+      "label": "Elementor",
+      "provider": "Elementor",
+      "category": "necessary",
+      "scripts": [],
+      "inline": [],
+      "iframes": [],
+      "domains": [],
+      "cookies": [
+        {
+          "name": "elementor",
+          "match": "exact",
+          "type": "storage",
+          "third_party": false,
+          "duration": "persistent",
+          "purpose": {
+            "en": "Stores page builder state in the browser.",
+            "sv": "Sparar sidbyggarens tillstånd i webbläsaren."
+          }
+        }
+      ]
+    },
+    {
+      "id": "cloudflare",
+      "label": "Cloudflare",
+      "provider": "Cloudflare",
+      "category": "necessary",
+      "scripts": [
+        "challenges.cloudflare.com/",
+        "cdnjs.cloudflare.com/"
+      ],
+      "inline": [],
+      "iframes": [],
+      "domains": [
+        "challenges.cloudflare.com",
+        "cdnjs.cloudflare.com"
+      ],
+      "cookies": [
+        {
+          "name": "__cf_bm",
+          "match": "exact",
+          "type": "cookie",
+          "third_party": false,
+          "duration": {
+            "n": 30,
+            "unit": "minute"
+          },
+          "purpose": {
+            "en": "Separates human visitors from bots to protect the site.",
+            "sv": "Skiljer mänskliga besökare från bottar för att skydda webbplatsen."
+          }
+        },
+        {
+          "name": "cf_clearance",
+          "match": "exact",
+          "type": "cookie",
+          "third_party": false,
+          "duration": {
+            "n": 30,
+            "unit": "minute"
+          },
+          "purpose": {
+            "en": "Records that the visitor passed a security check.",
+            "sv": "Anger att besökaren klarat en säkerhetskontroll."
+          }
+        },
+        {
+          "name": "__cfruid",
+          "match": "exact",
+          "type": "cookie",
+          "third_party": false,
+          "duration": "session",
+          "purpose": {
+            "en": "Identifies traffic from a single client behind a shared network.",
+            "sv": "Identifierar trafik från en enskild klient bakom ett delat nätverk."
+          }
+        }
+      ]
+    },
+    {
+      "id": "recaptcha",
+      "label": "Google reCAPTCHA",
+      "provider": "Google",
+      "category": "necessary",
+      "scripts": [
+        "google.com/recaptcha/",
+        "recaptcha.net/",
+        "gstatic.com/recaptcha/"
+      ],
+      "inline": [
+        "grecaptcha."
+      ],
+      "iframes": [
+        "google.com/recaptcha/",
+        "recaptcha.net/"
+      ],
+      "domains": [
+        "recaptcha.net"
+      ],
+      "cookies": [
+        {
+          "name": "_GRECAPTCHA",
+          "match": "exact",
+          "type": "cookie",
+          "third_party": true,
+          "duration": {
+            "n": 6,
+            "unit": "month"
+          },
+          "purpose": {
+            "en": "Tells people from bots to protect forms against spam.",
+            "sv": "Skiljer människor från bottar för att skydda formulär mot skräppost."
+          }
+        }
+      ]
+    },
+    {
+      "id": "php-session",
+      "label": "PHP session",
+      "provider": "PHP",
+      "category": "necessary",
+      "scripts": [],
+      "inline": [],
+      "iframes": [],
+      "domains": [],
+      "cookies": [
+        {
+          "name": "PHPSESSID",
+          "match": "exact",
+          "type": "cookie",
+          "third_party": false,
+          "duration": "session",
+          "purpose": {
+            "en": "Keeps the visitor's session on the server.",
+            "sv": "Behåller besökarens session på servern."
+          }
+        }
+      ]
+    },
+    {
+      "id": "stripe",
+      "label": "Stripe",
+      "provider": "Stripe",
+      "category": "necessary",
+      "scripts": [
+        "js.stripe.com/"
+      ],
+      "inline": [],
+      "iframes": [
+        "js.stripe.com/"
+      ],
+      "domains": [
+        "js.stripe.com"
+      ],
+      "cookies": [
+        {
+          "name": "__stripe_mid",
+          "match": "exact",
+          "type": "cookie",
+          "third_party": false,
+          "duration": {
+            "n": 1,
+            "unit": "year"
+          },
+          "purpose": {
+            "en": "Helps Stripe detect payment fraud.",
+            "sv": "Hjälper Stripe att upptäcka betalningsbedrägerier."
+          }
+        },
+        {
+          "name": "__stripe_sid",
+          "match": "exact",
+          "type": "cookie",
+          "third_party": false,
+          "duration": {
+            "n": 30,
+            "unit": "minute"
+          },
+          "purpose": {
+            "en": "Helps Stripe detect payment fraud during a session.",
+            "sv": "Hjälper Stripe att upptäcka betalningsbedrägerier under en session."
+          }
+        }
+      ]
+    },
+    {
+      "id": "google-fonts",
+      "label": "Google Fonts",
+      "provider": "Google",
+      "category": "necessary",
+      "scripts": [],
+      "inline": [],
+      "iframes": [],
+      "domains": [
+        "fonts.googleapis.com",
+        "fonts.gstatic.com"
+      ],
+      "cookies": []
+    },
+    {
+      "id": "google-analytics",
+      "label": "Google Analytics",
+      "provider": "Google",
+      "category": "statistics",
+      "scripts": [
+        "googletagmanager.com/gtag/js",
+        "google-analytics.com/analytics.js",
+        "google-analytics.com/ga.js"
+      ],
+      "inline": [
+        "gtag('config'",
+        "gtag(\"config\"",
+        "GoogleAnalyticsObject"
+      ],
+      "iframes": [],
+      "domains": [
+        "google-analytics.com",
+        "analytics.google.com"
+      ],
+      "cookies": [
+        {
+          "name": "_ga",
+          "match": "exact",
+          "type": "cookie",
+          "third_party": false,
+          "duration": {
+            "n": 2,
+            "unit": "year"
+          },
+          "purpose": {
+            "en": "Distinguishes visitors for statistics.",
+            "sv": "Skiljer besökare åt för statistik."
+          }
+        },
+        {
+          "name": "_ga_",
+          "match": "prefix",
+          "type": "cookie",
+          "third_party": false,
+          "duration": {
+            "n": 2,
+            "unit": "year"
+          },
+          "purpose": {
+            "en": "Keeps the session state for Google Analytics 4.",
+            "sv": "Behåller sessionstillståndet för Google Analytics 4."
+          }
+        },
+        {
+          "name": "_gid",
+          "match": "exact",
+          "type": "cookie",
+          "third_party": false,
+          "duration": {
+            "n": 1,
+            "unit": "day"
+          },
+          "purpose": {
+            "en": "Distinguishes visitors for statistics.",
+            "sv": "Skiljer besökare åt för statistik."
+          }
+        },
+        {
+          "name": "_gat",
+          "match": "prefix",
+          "type": "cookie",
+          "third_party": false,
+          "duration": {
+            "n": 1,
+            "unit": "minute"
+          },
+          "purpose": {
+            "en": "Limits the rate of requests to Google Analytics.",
+            "sv": "Begränsar antalet anrop till Google Analytics."
+          }
+        },
+        {
+          "name": "_dc_gtm_",
+          "match": "prefix",
+          "type": "cookie",
+          "third_party": false,
+          "duration": {
+            "n": 1,
+            "unit": "minute"
+          },
+          "purpose": {
+            "en": "Limits the rate of requests to Google Tag Manager.",
+            "sv": "Begränsar antalet anrop till Google Tag Manager."
+          }
+        }
+      ]
+    },
+    {
+      "id": "google-tag-manager",
+      "label": "Google Tag Manager",
+      "provider": "Google",
+      "category": "statistics",
+      "scripts": [
+        "googletagmanager.com/gtm.js"
+      ],
+      "inline": [
+        "'gtm.start'",
+        "\"gtm.start\""
+      ],
+      "iframes": [
+        "googletagmanager.com/ns.html"
+      ],
+      "domains": [
+        "googletagmanager.com"
+      ],
+      "cookies": []
+    },
+    {
+      "id": "site-kit",
+      "label": "Site Kit by Google",
+      "provider": "Google",
+      "category": "statistics",
+      "scripts": [],
+      "inline": [
+        "google_gtagjs"
+      ],
+      "iframes": [],
+      "domains": [],
+      "cookies": []
+    },
+    {
+      "id": "jetpack-stats",
+      "label": "Jetpack Stats",
+      "provider": "Automattic",
+      "category": "statistics",
+      "scripts": [
+        "stats.wp.com/"
+      ],
+      "inline": [],
+      "iframes": [],
+      "domains": [
+        "stats.wp.com"
+      ],
+      "cookies": []
+    },
+    {
+      "id": "hotjar",
+      "label": "Hotjar",
+      "provider": "Hotjar",
+      "category": "statistics",
+      "scripts": [
+        "static.hotjar.com/",
+        "script.hotjar.com/"
+      ],
+      "inline": [
+        "hotjar.com",
+        "hjSettings"
+      ],
+      "iframes": [],
+      "domains": [
+        "hotjar.com",
+        "hotjar.io"
+      ],
+      "cookies": [
+        {
+          "name": "_hjSessionUser_",
+          "match": "prefix",
+          "type": "cookie",
+          "third_party": false,
+          "duration": {
+            "n": 1,
+            "unit": "year"
+          },
+          "purpose": {
+            "en": "Identifies a returning visitor for usage analysis.",
+            "sv": "Identifierar en återkommande besökare för användaranalys."
+          }
+        },
+        {
+          "name": "_hjSession_",
+          "match": "prefix",
+          "type": "cookie",
+          "third_party": false,
+          "duration": {
+            "n": 30,
+            "unit": "minute"
+          },
+          "purpose": {
+            "en": "Keeps the current visit's data together.",
+            "sv": "Håller samman uppgifterna för det aktuella besöket."
+          }
+        },
+        {
+          "name": "_hjFirstSeen",
+          "match": "exact",
+          "type": "cookie",
+          "third_party": false,
+          "duration": {
+            "n": 30,
+            "unit": "minute"
+          },
+          "purpose": {
+            "en": "Detects the visitor's first visit.",
+            "sv": "Anger om det är besökarens första besök."
+          }
+        },
+        {
+          "name": "_hjIncludedInSessionSample_",
+          "match": "prefix",
+          "type": "cookie",
+          "third_party": false,
+          "duration": {
+            "n": 30,
+            "unit": "minute"
+          },
+          "purpose": {
+            "en": "Records whether the visit is part of the analysis sample.",
+            "sv": "Anger om besöket ingår i analysurvalet."
+          }
+        },
+        {
+          "name": "_hjAbsoluteSessionInProgress",
+          "match": "exact",
+          "type": "cookie",
+          "third_party": false,
+          "duration": {
+            "n": 30,
+            "unit": "minute"
+          },
+          "purpose": {
+            "en": "Detects the start of a new visit.",
+            "sv": "Känner av när ett nytt besök börjar."
+          }
+        }
+      ]
+    },
+    {
+      "id": "microsoft-clarity",
+      "label": "Microsoft Clarity",
+      "provider": "Microsoft",
+      "category": "statistics",
+      "scripts": [
+        "clarity.ms/"
+      ],
+      "inline": [
+        "clarity.ms/"
+      ],
+      "iframes": [],
+      "domains": [
+        "clarity.ms"
+      ],
+      "cookies": [
+        {
+          "name": "_clck",
+          "match": "exact",
+          "type": "cookie",
+          "third_party": false,
+          "duration": {
+            "n": 1,
+            "unit": "year"
+          },
+          "purpose": {
+            "en": "Stores the Clarity user ID and settings.",
+            "sv": "Sparar Clarity-användar-ID och inställningar."
+          }
+        },
+        {
+          "name": "_clsk",
+          "match": "exact",
+          "type": "cookie",
+          "third_party": false,
+          "duration": {
+            "n": 1,
+            "unit": "day"
+          },
+          "purpose": {
+            "en": "Joins page views from one visit into a single recording.",
+            "sv": "Samlar sidvisningar från ett besök i en enda inspelning."
+          }
+        },
+        {
+          "name": "CLID",
+          "match": "exact",
+          "type": "cookie",
+          "third_party": true,
+          "duration": {
+            "n": 1,
+            "unit": "year"
+          },
+          "purpose": {
+            "en": "Identifies the first time Clarity saw the visitor.",
+            "sv": "Identifierar när Clarity först såg besökaren."
+          }
+        },
+        {
+          "name": "MUID",
+          "match": "exact",
+          "type": "cookie",
+          "third_party": true,
+          "duration": {
+            "n": 1,
+            "unit": "year"
+          },
+          "purpose": {
+            "en": "Identifies the browser for Microsoft services.",
+            "sv": "Identifierar webbläsaren för Microsofts tjänster."
+          }
+        }
+      ]
+    },
+    {
+      "id": "google-ads",
+      "label": "Google Ads",
+      "provider": "Google",
+      "category": "marketing",
+      "scripts": [
+        "googleadservices.com/",
+        "googleads.g.doubleclick.net/",
+        "googletagmanager.com/gtag/js?id=AW-"
+      ],
+      "inline": [
+        "gtag('config','AW-",
+        "gtag('config', 'AW-",
+        "gtag(\"config\",\"AW-",
+        "gtag(\"config\", \"AW-",
+        "googleadservices.com"
+      ],
+      "iframes": [],
+      "domains": [
+        "googleadservices.com",
+        "doubleclick.net"
+      ],
+      "cookies": [
+        {
+          "name": "_gcl_au",
+          "match": "exact",
+          "type": "cookie",
+          "third_party": false,
+          "duration": {
+            "n": 3,
+            "unit": "month"
+          },
+          "purpose": {
+            "en": "Measures how well ads lead to conversions.",
+            "sv": "Mäter hur väl annonser leder till konverteringar."
+          }
+        },
+        {
+          "name": "_gcl_aw",
+          "match": "exact",
+          "type": "cookie",
+          "third_party": false,
+          "duration": {
+            "n": 90,
+            "unit": "day"
+          },
+          "purpose": {
+            "en": "Stores ad click information for conversion tracking.",
+            "sv": "Sparar information om annonsklick för konverteringsmätning."
+          }
+        },
+        {
+          "name": "_gac_",
+          "match": "prefix",
+          "type": "cookie",
+          "third_party": false,
+          "duration": {
+            "n": 90,
+            "unit": "day"
+          },
+          "purpose": {
+            "en": "Stores campaign information for conversion tracking.",
+            "sv": "Sparar kampanjinformation för konverteringsmätning."
+          }
+        },
+        {
+          "name": "IDE",
+          "match": "exact",
+          "type": "cookie",
+          "third_party": true,
+          "duration": {
+            "n": 13,
+            "unit": "month"
+          },
+          "purpose": {
+            "en": "Shows relevant ads and measures their results.",
+            "sv": "Visar relevanta annonser och mäter resultatet."
+          }
+        },
+        {
+          "name": "test_cookie",
+          "match": "exact",
+          "type": "cookie",
+          "third_party": true,
+          "duration": {
+            "n": 15,
+            "unit": "minute"
+          },
+          "purpose": {
+            "en": "Checks that the browser accepts cookies.",
+            "sv": "Kontrollerar att webbläsaren accepterar cookies."
+          }
+        }
+      ]
+    },
+    {
+      "id": "meta-pixel",
+      "label": "Meta Pixel",
+      "provider": "Meta",
+      "category": "marketing",
+      "scripts": [
+        "connect.facebook.net/",
+        "facebook.com/tr?",
+        "facebook.com/tr/"
+      ],
+      "inline": [
+        "fbq('init'",
+        "fbq(\"init\"",
+        "fbevents.js"
+      ],
+      "iframes": [],
+      "domains": [
+        "connect.facebook.net"
+      ],
+      "cookies": [
+        {
+          "name": "_fbp",
+          "match": "exact",
+          "type": "cookie",
+          "third_party": false,
+          "duration": {
+            "n": 3,
+            "unit": "month"
+          },
+          "purpose": {
+            "en": "Identifies the browser for ad measurement.",
+            "sv": "Identifierar webbläsaren för annonsmätning."
+          }
+        },
+        {
+          "name": "_fbc",
+          "match": "exact",
+          "type": "cookie",
+          "third_party": false,
+          "duration": {
+            "n": 3,
+            "unit": "month"
+          },
+          "purpose": {
+            "en": "Stores the last ad click for ad measurement.",
+            "sv": "Sparar det senaste annonsklicket för annonsmätning."
+          }
+        },
+        {
+          "name": "fr",
+          "match": "exact",
+          "type": "cookie",
+          "third_party": true,
+          "duration": {
+            "n": 3,
+            "unit": "month"
+          },
+          "purpose": {
+            "en": "Delivers and measures ads.",
+            "sv": "Levererar och mäter annonser."
+          }
+        }
+      ]
+    },
+    {
+      "id": "meta-embeds",
+      "label": "Instagram and Facebook embeds",
+      "provider": "Meta",
+      "category": "marketing",
+      "scripts": [
+        "connect.facebook.net/en_US/sdk.js",
+        "/sdk.js#xfbml",
+        "instagram.com/embed.js"
+      ],
+      "inline": [],
+      "iframes": [
+        "instagram.com/embed",
+        "facebook.com/plugins/"
+      ],
+      "domains": [
+        "instagram.com",
+        "facebook.com"
+      ],
+      "cookies": [
+        {
+          "name": "datr",
+          "match": "exact",
+          "type": "cookie",
+          "third_party": true,
+          "duration": {
+            "n": 2,
+            "unit": "year"
+          },
+          "purpose": {
+            "en": "Identifies the browser to protect against fraud and abuse.",
+            "sv": "Identifierar webbläsaren för skydd mot bedrägerier och missbruk."
+          }
+        },
+        {
+          "name": "ig_did",
+          "match": "exact",
+          "type": "cookie",
+          "third_party": true,
+          "duration": {
+            "n": 2,
+            "unit": "year"
+          },
+          "purpose": {
+            "en": "Identifies the browser for Instagram.",
+            "sv": "Identifierar webbläsaren för Instagram."
+          }
+        }
+      ]
+    },
+    {
+      "id": "linkedin-insight",
+      "label": "LinkedIn Insight Tag",
+      "provider": "LinkedIn",
+      "category": "marketing",
+      "scripts": [
+        "snap.licdn.com/"
+      ],
+      "inline": [
+        "_linkedin_partner_id"
+      ],
+      "iframes": [],
+      "domains": [
+        "snap.licdn.com",
+        "px.ads.linkedin.com"
+      ],
+      "cookies": [
+        {
+          "name": "li_sugr",
+          "match": "exact",
+          "type": "cookie",
+          "third_party": true,
+          "duration": {
+            "n": 90,
+            "unit": "day"
+          },
+          "purpose": {
+            "en": "Identifies the browser for ad measurement.",
+            "sv": "Identifierar webbläsaren för annonsmätning."
+          }
+        },
+        {
+          "name": "bcookie",
+          "match": "exact",
+          "type": "cookie",
+          "third_party": true,
+          "duration": {
+            "n": 1,
+            "unit": "year"
+          },
+          "purpose": {
+            "en": "Identifies the browser for LinkedIn.",
+            "sv": "Identifierar webbläsaren för LinkedIn."
+          }
+        },
+        {
+          "name": "bscookie",
+          "match": "exact",
+          "type": "cookie",
+          "third_party": true,
+          "duration": {
+            "n": 1,
+            "unit": "year"
+          },
+          "purpose": {
+            "en": "Identifies the browser securely for LinkedIn.",
+            "sv": "Används av LinkedIn för att känna igen webbläsaren och skydda inloggningen."
+          }
+        },
+        {
+          "name": "lidc",
+          "match": "exact",
+          "type": "cookie",
+          "third_party": true,
+          "duration": {
+            "n": 1,
+            "unit": "day"
+          },
+          "purpose": {
+            "en": "Routes requests to the right LinkedIn data centre.",
+            "sv": "Dirigerar anrop till rätt datacenter hos LinkedIn."
+          }
+        },
+        {
+          "name": "UserMatchHistory",
+          "match": "exact",
+          "type": "cookie",
+          "third_party": true,
+          "duration": {
+            "n": 30,
+            "unit": "day"
+          },
+          "purpose": {
+            "en": "Syncs LinkedIn ad IDs.",
+            "sv": "Synkroniserar LinkedIns annons-ID."
+          }
+        }
+      ]
+    },
+    {
+      "id": "tiktok-pixel",
+      "label": "TikTok Pixel",
+      "provider": "TikTok",
+      "category": "marketing",
+      "scripts": [
+        "analytics.tiktok.com/"
+      ],
+      "inline": [
+        "ttq.load("
+      ],
+      "iframes": [],
+      "domains": [
+        "analytics.tiktok.com"
+      ],
+      "cookies": [
+        {
+          "name": "_ttp",
+          "match": "exact",
+          "type": "cookie",
+          "third_party": false,
+          "duration": {
+            "n": 13,
+            "unit": "month"
+          },
+          "purpose": {
+            "en": "Measures and improves the results of TikTok ads.",
+            "sv": "Mäter och förbättrar resultatet av TikTok-annonser."
+          }
+        },
+        {
+          "name": "_tt_enable_cookie",
+          "match": "exact",
+          "type": "cookie",
+          "third_party": false,
+          "duration": {
+            "n": 13,
+            "unit": "month"
+          },
+          "purpose": {
+            "en": "Records whether TikTok cookies are enabled.",
+            "sv": "Anger om TikTok-cookies är aktiverade."
+          }
+        }
+      ]
+    },
+    {
+      "id": "youtube",
+      "label": "YouTube",
+      "provider": "Google",
+      "category": "marketing",
+      "scripts": [
+        "youtube.com/iframe_api",
+        "youtube.com/player_api"
+      ],
+      "inline": [],
+      "iframes": [
+        "youtube.com/embed",
+        "youtube-nocookie.com/embed"
+      ],
+      "domains": [
+        "youtube.com",
+        "youtube-nocookie.com"
+      ],
+      "cookies": [
+        {
+          "name": "YSC",
+          "match": "exact",
+          "type": "cookie",
+          "third_party": true,
+          "duration": "session",
+          "purpose": {
+            "en": "Keeps statistics for videos watched.",
+            "sv": "Samlar statistik över visade videor."
+          }
+        },
+        {
+          "name": "VISITOR_INFO1_LIVE",
+          "match": "exact",
+          "type": "cookie",
+          "third_party": true,
+          "duration": {
+            "n": 6,
+            "unit": "month"
+          },
+          "purpose": {
+            "en": "Estimates bandwidth to choose the video player.",
+            "sv": "Uppskattar bandbredden för att välja rätt videokvalitet."
+          }
+        },
+        {
+          "name": "VISITOR_PRIVACY_METADATA",
+          "match": "exact",
+          "type": "cookie",
+          "third_party": true,
+          "duration": {
+            "n": 6,
+            "unit": "month"
+          },
+          "purpose": {
+            "en": "Stores the visitor's cookie consent choice for YouTube.",
+            "sv": "Sparar besökarens cookieval för YouTube."
+          }
+        },
+        {
+          "name": "yt-remote-",
+          "match": "prefix",
+          "type": "storage",
+          "third_party": true,
+          "duration": "persistent",
+          "purpose": {
+            "en": "Stores the video player's settings.",
+            "sv": "Sparar videospelarens inställningar."
+          }
+        }
+      ]
+    },
+    {
+      "id": "vimeo",
+      "label": "Vimeo",
+      "provider": "Vimeo",
+      "category": "marketing",
+      "scripts": [
+        "player.vimeo.com/api/player.js"
+      ],
+      "inline": [],
+      "iframes": [
+        "player.vimeo.com"
+      ],
+      "domains": [
+        "vimeo.com",
+        "vimeocdn.com"
+      ],
+      "cookies": [
+        {
+          "name": "vuid",
+          "match": "exact",
+          "type": "cookie",
+          "third_party": true,
+          "duration": {
+            "n": 2,
+            "unit": "year"
+          },
+          "purpose": {
+            "en": "Collects statistics on videos watched.",
+            "sv": "Samlar statistik över visade videor."
+          }
+        },
+        {
+          "name": "player",
+          "match": "exact",
+          "type": "cookie",
+          "third_party": true,
+          "duration": {
+            "n": 1,
+            "unit": "year"
+          },
+          "purpose": {
+            "en": "Saves the visitor's video player settings.",
+            "sv": "Sparar besökarens inställningar för videospelaren."
+          }
+        }
+      ]
+    },
+    {
+      "id": "google-maps",
+      "label": "Google Maps",
+      "provider": "Google",
+      "category": "marketing",
+      "scripts": [
+        "maps.googleapis.com/",
+        "maps.google.com/maps/api"
+      ],
+      "inline": [],
+      "iframes": [
+        "google.com/maps/embed",
+        "maps.google."
+      ],
+      "domains": [
+        "maps.googleapis.com",
+        "maps.gstatic.com"
+      ],
+      "cookies": [
+        {
+          "name": "NID",
+          "match": "exact",
+          "type": "cookie",
+          "third_party": true,
+          "duration": {
+            "n": 6,
+            "unit": "month"
+          },
+          "purpose": {
+            "en": "Stores the visitor's preferences and ad settings for Google.",
+            "sv": "Sparar besökarens inställningar och annonsval hos Google."
+          }
+        },
+        {
+          "name": "AEC",
+          "match": "exact",
+          "type": "cookie",
+          "third_party": true,
+          "duration": {
+            "n": 6,
+            "unit": "month"
+          },
+          "purpose": {
+            "en": "Protects the visitor against abuse in Google services.",
+            "sv": "Skyddar besökaren mot missbruk i Googles tjänster."
+          }
+        },
+        {
+          "name": "SOCS",
+          "match": "exact",
+          "type": "cookie",
+          "third_party": true,
+          "duration": {
+            "n": 13,
+            "unit": "month"
+          },
+          "purpose": {
+            "en": "Stores the visitor's cookie choice for Google.",
+            "sv": "Sparar besökarens cookieval hos Google."
+          }
+        }
+      ]
+    },
+    {
+      "id": "yith",
+      "label": "YITH WooCommerce",
+      "provider": "YITH",
+      "category": "preferences",
+      "scripts": [],
+      "inline": [],
+      "iframes": [],
+      "domains": [],
+      "cookies": [
+        {
+          "name": "yith_wcwl_session_",
+          "match": "prefix",
+          "type": "cookie",
+          "third_party": false,
+          "duration": {
+            "n": 30,
+            "unit": "day"
+          },
+          "purpose": {
+            "en": "Keeps the visitor's wishlist.",
+            "sv": "Behåller besökarens önskelista."
+          }
+        },
+        {
+          "name": "yith_wcwl_products",
+          "match": "exact",
+          "type": "cookie",
+          "third_party": false,
+          "duration": "session",
+          "purpose": {
+            "en": "Lists the products on the visitor's wishlist.",
+            "sv": "Listar produkterna på besökarens önskelista."
+          }
+        },
+        {
+          "name": "yith_woocompare_products",
+          "match": "exact",
+          "type": "cookie",
+          "third_party": false,
+          "duration": "session",
+          "purpose": {
+            "en": "Lists the products the visitor is comparing.",
+            "sv": "Listar produkterna som besökaren jämför."
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "revolter-cookies/full-page",
+	"title": "Cookie policy (full page)",
+	"category": "widgets",
+	"icon": "shield",
+	"description": "The full cookie policy with the live cookie declaration.",
+	"textdomain": "revolter-cookies",
+	"attributes": {
+		"showWhat": { "type": "boolean", "default": true },
+		"showHow": { "type": "boolean", "default": true },
+		"showManage": { "type": "boolean", "default": true },
+		"showLegal": { "type": "boolean", "default": true },
+		"showRights": { "type": "boolean", "default": true },
+		"showConsent": { "type": "boolean", "default": true }
+	},
+	"supports": {
+		"spacing": { "margin": true, "padding": true },
+		"typography": { "fontSize": true }
+	},
+	"editorScript": "revolter-cookies-blocks"
+}

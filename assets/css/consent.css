@@ -1,0 +1,637 @@
+/* Revolter Cookies: banner, preferences, settings button and blocked-content placeholders. */
+
+/* Reset inside the root so theme styles cannot leak in. */
+#rc-root,
+#rc-root *,
+#rc-root *::before,
+#rc-root *::after {
+	box-sizing: border-box;
+}
+
+#rc-root {
+	--rc-text: #1c1f1a;
+	--rc-body: #3e433b;
+	--rc-muted: #5b6157;
+	--rc-line: #e6e8e3;
+	--rc-line-soft: #ecede9;
+	--rc-outline: #c9ccc4;
+	--rc-locked: #8d9388;
+	--rc-credit-accent: #7048ef;
+	--rc-z: 2147483000;
+	font-family: inherit;
+	font-size: 16px;
+	line-height: 1.5;
+	color: var(--rc-text);
+	text-align: left;
+}
+
+#rc-root [hidden] {
+	display: none !important;
+}
+
+#rc-root h2,
+#rc-root p,
+#rc-root label {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-family: inherit;
+	letter-spacing: normal;
+	text-transform: none;
+	color: inherit;
+	background: none;
+}
+
+#rc-root button {
+	margin: 0;
+	font: inherit;
+	letter-spacing: normal;
+	text-transform: none;
+	text-shadow: none;
+	box-shadow: none;
+	cursor: pointer;
+	-webkit-appearance: none;
+	appearance: none;
+}
+
+#rc-root svg {
+	display: inline-block;
+	flex-shrink: 0;
+	vertical-align: middle;
+}
+
+#rc-root :focus {
+	outline: none;
+}
+
+#rc-root :focus-visible {
+	outline: 2px solid var(--rc-accent);
+	outline-offset: 2px;
+}
+
+#rc-root .rc-sr {
+	position: absolute !important;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border: 0;
+}
+
+/* Shared type and buttons. */
+#rc-root .rc-title {
+	font-size: 19px;
+	font-weight: 600;
+	line-height: 1.3;
+	color: var(--rc-text);
+}
+
+#rc-root .rc-link {
+	color: var(--rc-accent-text, var(--rc-accent));
+	text-decoration: underline;
+	text-underline-offset: 2px;
+}
+
+#rc-root .rc-link:hover {
+	text-decoration-thickness: 2px;
+}
+
+#rc-root .rc-btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 46px;
+	padding: 0 16px;
+	border: 1.5px solid var(--rc-accent);
+	border-radius: 8px;
+	font-size: 15px;
+	font-weight: 600;
+	line-height: 1.2;
+	text-align: center;
+	text-decoration: none;
+	white-space: nowrap;
+}
+
+#rc-root .rc-btn-primary {
+	background: var(--rc-accent);
+	color: var(--rc-accent-ink);
+}
+
+#rc-root .rc-btn-primary:hover {
+	filter: brightness(0.92);
+}
+
+#rc-root .rc-btn-outline {
+	min-height: 44px;
+	border-color: var(--rc-outline);
+	background: #fff;
+	color: var(--rc-text);
+	font-size: 14.5px;
+	font-weight: 500;
+}
+
+#rc-root .rc-btn-outline:hover {
+	border-color: var(--rc-muted);
+}
+
+/* Banner: a light dim that never blocks the page, with a card at the bottom centre. */
+#rc-root .rc-banner {
+	position: fixed;
+	inset: 0;
+	z-index: var(--rc-z);
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	padding: 0 16px 32px;
+	background: rgba(20, 22, 18, 0.25);
+	pointer-events: none;
+}
+
+#rc-root .rc-card {
+	display: flex;
+	flex-direction: column;
+	gap: 18px;
+	width: 100%;
+	max-width: 960px;
+	max-height: calc(100vh - 48px);
+	overflow: auto;
+	padding: 26px 32px 14px;
+	border-radius: 14px;
+	background: #fff;
+	box-shadow: 0 12px 40px rgba(0, 0, 0, 0.18);
+	pointer-events: auto;
+	animation: rc-rise 0.2s ease-out;
+}
+
+#rc-root .rc-banner-body {
+	display: flex;
+	align-items: flex-end;
+	gap: 32px;
+}
+
+#rc-root .rc-banner-text {
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	gap: 10px;
+	min-width: 0;
+}
+
+#rc-root .rc-text {
+	font-size: 14.5px;
+	line-height: 1.55;
+	color: var(--rc-body);
+}
+
+#rc-root .rc-actions {
+	display: flex;
+	flex: 0 0 auto;
+	flex-direction: column;
+	gap: 10px;
+	min-width: 260px;
+}
+
+#rc-root .rc-actions-row {
+	display: flex;
+	gap: 10px;
+}
+
+#rc-root .rc-actions-row .rc-btn {
+	flex: 1 1 0;
+}
+
+/* Credit row. */
+#rc-root .rc-credit {
+	display: flex;
+	justify-content: flex-end;
+	padding-top: 10px;
+	border-top: 1px solid var(--rc-line-soft);
+}
+
+#rc-root .rc-credit a {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	min-height: 32px;
+	font-size: 12.5px;
+	line-height: 1;
+	color: var(--rc-muted);
+	text-decoration: none;
+}
+
+#rc-root .rc-credit a:hover {
+	color: var(--rc-text);
+}
+
+#rc-root .rc-credit-logo {
+	width: auto;
+	height: 14px;
+}
+
+/* Preferences modal. */
+#rc-root .rc-modal {
+	position: fixed;
+	inset: 0;
+	z-index: calc(var(--rc-z) + 1);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 16px;
+	background: rgba(20, 22, 18, 0.45);
+}
+
+#rc-root .rc-dialog {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	max-width: 640px;
+	max-height: calc(100vh - 32px);
+	overflow: auto;
+	border-radius: 14px;
+	background: #fff;
+	box-shadow: 0 12px 40px rgba(0, 0, 0, 0.22);
+	animation: rc-rise 0.2s ease-out;
+}
+
+#rc-root .rc-modal-head {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 12px;
+	padding: 20px 16px 8px 28px;
+}
+
+#rc-root .rc-modal-head .rc-title {
+	flex: 1;
+	font-size: 20px;
+}
+
+#rc-root .rc-close {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 44px;
+	height: 44px;
+	padding: 0;
+	border: 0;
+	border-radius: 8px;
+	background: transparent;
+	color: var(--rc-body);
+}
+
+#rc-root .rc-close:hover {
+	background: #f3f4f1;
+}
+
+#rc-root .rc-intro {
+	padding: 0 28px 16px;
+	font-size: 14px;
+	line-height: 1.55;
+	color: var(--rc-body);
+}
+
+#rc-root .rc-cats {
+	border-top: 1px solid var(--rc-line);
+}
+
+#rc-root .rc-cat {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	padding: 16px 28px;
+	border-bottom: 1px solid var(--rc-line);
+}
+
+#rc-root .rc-cat-text {
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	gap: 4px;
+	min-width: 0;
+}
+
+#rc-root .rc-cat-head {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: baseline;
+	gap: 0 8px;
+}
+
+#rc-root .rc-cat-name {
+	font-size: 15px;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+#rc-root .rc-cat-locked .rc-cat-name {
+	cursor: default;
+}
+
+#rc-root .rc-cat-count {
+	font-size: 12.5px;
+	color: var(--rc-muted);
+}
+
+#rc-root .rc-cat-desc {
+	font-size: 13.5px;
+	line-height: 1.5;
+	color: #4a4f47;
+}
+
+/* Toggle: a real checkbox laid over the track, so clicks, labels and keyboard all work. */
+#rc-root .rc-switch {
+	position: relative;
+	display: inline-flex;
+	flex-shrink: 0;
+	align-items: center;
+	justify-content: center;
+	width: 52px;
+	height: 44px;
+}
+
+#rc-root .rc-switch-input {
+	position: absolute;
+	inset: 0;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	opacity: 0;
+	cursor: pointer;
+}
+
+#rc-root .rc-switch-input:disabled {
+	cursor: default;
+}
+
+#rc-root .rc-switch-track {
+	position: relative;
+	width: 46px;
+	height: 26px;
+	border-radius: 13px;
+	background: var(--rc-outline);
+	transition: background-color 0.15s ease;
+}
+
+#rc-root .rc-switch-track::after {
+	content: "";
+	position: absolute;
+	top: 3px;
+	left: 3px;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background: #fff;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+	transition: transform 0.15s ease;
+}
+
+#rc-root .rc-switch-input:checked + .rc-switch-track {
+	background: var(--rc-accent);
+}
+
+#rc-root .rc-switch-input:checked + .rc-switch-track::after {
+	transform: translateX(20px);
+}
+
+#rc-root .rc-switch-input:disabled + .rc-switch-track {
+	background: var(--rc-locked);
+}
+
+#rc-root .rc-switch-input:focus-visible + .rc-switch-track {
+	outline: 2px solid var(--rc-accent);
+	outline-offset: 2px;
+}
+
+#rc-root .rc-modal-actions {
+	display: flex;
+	gap: 10px;
+	padding: 20px 28px;
+}
+
+#rc-root .rc-modal-actions .rc-btn {
+	flex: 1 1 0;
+	min-height: 46px;
+	font-size: 14.5px;
+	font-weight: 600;
+}
+
+#rc-root .rc-dialog .rc-credit {
+	padding: 8px 28px 10px;
+}
+
+/* Floating settings button, shown after a choice. */
+#rc-root .rc-settings-button {
+	position: fixed;
+	bottom: 16px;
+	z-index: calc(var(--rc-z) - 1);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 44px;
+	height: 44px;
+	padding: 0;
+	border: 1px solid var(--rc-line);
+	border-radius: 50%;
+	background: #fff;
+	color: var(--rc-accent-text, var(--rc-accent));
+	box-shadow: 0 4px 14px rgba(0, 0, 0, 0.16);
+}
+
+#rc-root .rc-settings-button.rc-pos-left {
+	left: 16px;
+}
+
+#rc-root .rc-settings-button.rc-pos-right {
+	right: 16px;
+}
+
+#rc-root .rc-settings-button:hover {
+	box-shadow: 0 6px 18px rgba(0, 0, 0, 0.22);
+}
+
+@keyframes rc-rise {
+	from {
+		opacity: 0;
+		transform: translateY(12px);
+	}
+	to {
+		opacity: 1;
+		transform: none;
+	}
+}
+
+/* Small screens: full-width card, stacked layout, 44px targets. */
+@media (max-width: 640px) {
+	#rc-root .rc-banner {
+		padding: 0;
+	}
+
+	#rc-root .rc-card {
+		max-height: 85vh;
+		padding: 20px 16px 8px;
+		border-radius: 14px 14px 0 0;
+	}
+
+	#rc-root .rc-banner-body {
+		flex-direction: column;
+		align-items: stretch;
+		gap: 18px;
+	}
+
+	#rc-root .rc-actions {
+		min-width: 0;
+	}
+
+	#rc-root .rc-modal {
+		align-items: flex-end;
+		padding: 0;
+	}
+
+	#rc-root .rc-dialog {
+		max-height: 92vh;
+		border-radius: 14px 14px 0 0;
+	}
+
+	#rc-root .rc-modal-head {
+		padding: 16px 8px 8px 16px;
+	}
+
+	#rc-root .rc-intro,
+	#rc-root .rc-cat,
+	#rc-root .rc-modal-actions {
+		padding-right: 16px;
+		padding-left: 16px;
+	}
+
+	#rc-root .rc-modal-actions {
+		flex-direction: column;
+	}
+
+	#rc-root .rc-credit a {
+		min-height: 44px;
+	}
+
+	#rc-root .rc-dialog .rc-credit {
+		padding: 0 16px;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	#rc-root *,
+	#rc-root *::before,
+	#rc-root *::after {
+		animation: none !important;
+		transition: none !important;
+	}
+}
+
+/* Blocked-content placeholders (content injected by consent.js, outside #rc-root). */
+.rc-blocked-embed,
+.rc-blocked-widget {
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 16px;
+	width: 100%;
+	max-width: 100%;
+	padding: 32px;
+	border-radius: 12px;
+	font-family: inherit;
+	text-align: center;
+}
+
+.rc-blocked-embed *,
+.rc-blocked-widget * {
+	box-sizing: border-box;
+}
+
+.rc-blocked-embed {
+	min-height: 220px;
+	aspect-ratio: 16 / 9;
+	background: #2a2d28;
+	color: #f2f3f0;
+}
+
+.rc-blocked-widget {
+	min-height: 140px;
+	border: 1px dashed #c9ccc4;
+	background: #f3f4f1;
+	color: #1c1f1a;
+}
+
+.rc-blocked-embed .rc-ph-icon,
+.rc-blocked-widget .rc-ph-icon {
+	width: 40px;
+	height: 40px;
+}
+
+.rc-blocked-embed .rc-ph-text,
+.rc-blocked-widget .rc-ph-text {
+	max-width: 440px;
+	margin: 0;
+	font-size: 15.5px;
+	line-height: 1.55;
+	color: inherit;
+}
+
+.rc-blocked-embed .rc-ph-actions,
+.rc-blocked-widget .rc-ph-actions {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+}
+
+.rc-blocked-embed .rc-ph-accept,
+.rc-blocked-widget .rc-ph-accept {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 44px;
+	margin: 0;
+	padding: 0 20px;
+	border: 0;
+	border-radius: 8px;
+	background: var(--rc-accent, #2f4bc7);
+	color: var(--rc-accent-ink, #fff);
+	font: inherit;
+	font-size: 14.5px;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+.rc-blocked-embed .rc-ph-open,
+.rc-blocked-widget .rc-ph-open {
+	display: inline-flex;
+	align-items: center;
+	min-height: 44px;
+	padding: 0 16px;
+	font-size: 14px;
+	color: inherit;
+	opacity: 0.85;
+	text-decoration: underline;
+}
+
+.rc-blocked-embed :focus-visible,
+.rc-blocked-widget :focus-visible {
+	outline: 2px solid var(--rc-accent, #2f4bc7);
+	outline-offset: 2px;
+}
+
+@media (max-width: 640px) {
+	.rc-blocked-embed,
+	.rc-blocked-widget {
+		padding: 20px 16px;
+	}
+
+	.rc-blocked-embed {
+		aspect-ratio: auto;
+	}
+}

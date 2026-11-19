@@ -1,0 +1,31 @@
+{
+	"name": "revolter/revolter-cookies",
+	"description": "Self-contained cookie consent plugin for WordPress.",
+	"type": "wordpress-plugin",
+	"license": "GPL-2.0-or-later",
+	"require": {
+		"php": ">=7.4",
+		"yahnis-elsts/plugin-update-checker": "^5.5"
+	},
+	"require-dev": {
+		"phpunit/phpunit": "^9.6",
+		"yoast/phpunit-polyfills": "^2",
+		"wp-phpunit/wp-phpunit": "^6.5",
+		"wp-coding-standards/wpcs": "^3.1",
+		"dealerdirect/phpcodesniffer-composer-installer": "^1",
+		"phpcompatibility/phpcompatibility-wp": "^2.1"
+	},
+	"config": {
+		"allow-plugins": {
+			"dealerdirect/phpcodesniffer-composer-installer": true
+		},
+		"platform": {
+			"php": "7.4.0"
+		}
+	},
+	"scripts": {
+		"test": "phpunit",
+		"lint": "phpcs",
+		"lint:fix": "phpcbf"
+	}
+}

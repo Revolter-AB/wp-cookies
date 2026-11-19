@@ -1,0 +1,179 @@
+/* Cookie declaration. Inherits the theme's fonts and colours. */
+.rc-decl {
+	--rc-decl-accent: var(--rc-accent, #2F4BC7);
+	--rc-decl-accent-text: var(--rc-accent-text, #2F4BC7);
+	--rc-decl-border: rgba(128, 128, 128, 0.3);
+	max-width: 100%;
+	font: inherit;
+	color: inherit;
+}
+
+@supports (color: color-mix(in srgb, red 50%, blue)) {
+	.rc-decl {
+		--rc-decl-border: color-mix(in srgb, currentColor 18%, transparent);
+	}
+}
+
+.rc-decl .rc-section,
+.rc-decl .rc-declaration {
+	margin: 0 0 var(--rc-gap, 2em);
+}
+
+.rc-decl .rc-group-title {
+	margin: 1.6em 0 0.25em;
+}
+
+.rc-decl .rc-group-count {
+	margin-left: 0.4em;
+	font-size: 0.8em;
+	font-weight: 400;
+	opacity: 0.7;
+}
+
+.rc-decl .rc-group-desc,
+.rc-decl .rc-updated {
+	margin: 0 0 0.8em;
+	opacity: 0.8;
+}
+
+.rc-decl .rc-table {
+	width: 100%;
+	margin: 0 0 1em;
+	border-collapse: collapse;
+	border: 1px solid var(--rc-decl-border);
+	font-size: 0.95em;
+	table-layout: auto;
+}
+
+.rc-decl .rc-table th,
+.rc-decl .rc-table td {
+	padding: 10px 12px;
+	border: 0;
+	border-bottom: 1px solid var(--rc-decl-border);
+	text-align: left;
+	vertical-align: top;
+}
+
+.rc-decl .rc-table th {
+	font-weight: 600;
+	white-space: nowrap;
+}
+
+.rc-decl .rc-table tbody tr:last-child td {
+	border-bottom: 0;
+}
+
+.rc-decl .rc-table code {
+	padding: 0;
+	background: none;
+	font-size: 0.92em;
+	overflow-wrap: anywhere;
+}
+
+.rc-decl .rc-settings-link a {
+	color: var(--rc-decl-accent-text);
+}
+
+.rc-decl .rc-consent-box {
+	padding: 16px 18px;
+	border: 1px solid var(--rc-decl-border);
+	border-radius: 10px;
+}
+
+.rc-decl .rc-consent-box .rc-section-title {
+	margin-top: 0;
+}
+
+.rc-decl .rc-consent-actions {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+}
+
+.rc-decl .rc-btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 44px;
+	padding: 0 16px;
+	border: 1.5px solid var(--rc-decl-accent);
+	border-radius: 8px;
+	font: inherit;
+	font-size: 15px;
+	font-weight: 600;
+	line-height: 1.2;
+	cursor: pointer;
+}
+
+.rc-decl .rc-btn-primary {
+	background: var(--rc-decl-accent);
+	color: var(--rc-accent-ink, #fff);
+}
+
+.rc-decl .rc-btn-outline {
+	border-color: var(--rc-decl-border);
+	background: transparent;
+	color: inherit;
+	font-weight: 500;
+}
+
+.rc-decl .rc-btn:hover {
+	filter: brightness(0.92);
+}
+
+.rc-decl .rc-btn:focus-visible,
+.rc-decl .rc-settings-link a:focus-visible {
+	outline: 2px solid var(--rc-decl-accent);
+	outline-offset: 2px;
+}
+
+@media (max-width: 640px) {
+	.rc-decl .rc-table,
+	.rc-decl .rc-table tbody,
+	.rc-decl .rc-table tr,
+	.rc-decl .rc-table td {
+		display: block;
+		width: 100%;
+	}
+
+	.rc-decl .rc-table {
+		border: 0;
+	}
+
+	.rc-decl .rc-table thead {
+		position: absolute;
+		width: 1px;
+		height: 1px;
+		overflow: hidden;
+		clip-path: inset(50%);
+	}
+
+	.rc-decl .rc-table tr {
+		margin: 0 0 12px;
+		border: 1px solid var(--rc-decl-border);
+		border-radius: 8px;
+	}
+
+	.rc-decl .rc-table td,
+	.rc-decl .rc-table tbody tr:last-child td {
+		border-bottom: 1px solid var(--rc-decl-border);
+	}
+
+	.rc-decl .rc-table td:last-child,
+	.rc-decl .rc-table tbody tr:last-child td:last-child {
+		border-bottom: 0;
+	}
+
+	.rc-decl .rc-table td::before {
+		content: attr(data-label);
+		display: block;
+		margin-bottom: 2px;
+		font-size: 0.8em;
+		font-weight: 600;
+		opacity: 0.7;
+	}
+
+	.rc-decl .rc-btn {
+		flex: 1 1 100%;
+	}
+}

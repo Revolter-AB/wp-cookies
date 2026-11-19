@@ -1,0 +1,18 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "revolter-cookies/cookies-table",
+	"title": "Cookie table",
+	"category": "widgets",
+	"icon": "shield",
+	"description": "The live cookie declaration table.",
+	"textdomain": "revolter-cookies",
+	"attributes": {
+		"showSettingsLink": { "type": "boolean", "default": false }
+	},
+	"supports": {
+		"spacing": { "margin": true, "padding": true },
+		"typography": { "fontSize": true }
+	},
+	"editorScript": "revolter-cookies-blocks"
+}

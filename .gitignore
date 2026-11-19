@@ -1,0 +1,12 @@
+vendor/
+node_modules/
+tests/.wp-core/
+build/
+*.zip
+.DS_Store
+test-results/
+playwright-report/
+docs/
+CLAUDE.md
+.claude/
+.phpunit.result.cache

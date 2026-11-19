@@ -1,0 +1,12 @@
+{
+	"name": "revolter-cookies",
+	"private": true,
+	"scripts": {
+		"test": "node --test tests/js/*.test.js",
+		"e2e": "bash tests/e2e/run.sh"
+	},
+	"devDependencies": {
+		"@playwright/test": "^1",
+		"jsdom": "^25"
+	}
+}

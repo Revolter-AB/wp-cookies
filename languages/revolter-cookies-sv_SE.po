@@ -1,0 +1,901 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Revolter Cookies 0.1.0\n"
+"Report-Msgid-Bugs-To: https://revolter.se\n"
+"Last-Translator: Revolter AB\n"
+"Language-Team: Revolter AB\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-11-18T23:46:03+00:00\n"
+"PO-Revision-Date: 2026-11-19 00:00+0000\n"
+"Language: sv_SE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: revolter-cookies\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. Plugin Name of the plugin
+#: revolter-cookies.php
+msgid "Revolter Cookies"
+msgstr "Revolter Cookies"
+
+#. Description of the plugin
+#: revolter-cookies.php
+msgid "Self-contained cookie consent for WordPress: local scan, real cookie declaration, editable banner and real blocking of scripts and embeds until consent."
+msgstr "Fristående cookiesamtycke för WordPress: lokal skanning, riktig cookiedeklaration, redigerbar banner och riktig blockering av skript och inbäddningar tills samtycke ges."
+
+#. Author of the plugin
+#: revolter-cookies.php
+msgid "Revolter AB"
+msgstr "Revolter AB"
+
+#. Author URI of the plugin
+#: revolter-cookies.php
+msgid "https://revolter.se"
+msgstr "https://revolter.se"
+
+#: includes/admin/class-menu.php:86
+#: templates/admin/overview.php:33
+msgid "Cookies"
+msgstr "Cookies"
+
+#: includes/admin/class-menu.php:90
+msgid "Overview"
+msgstr "Översikt"
+
+#: includes/admin/class-menu.php:91
+#: templates/admin/banner.php:20
+msgid "Banner"
+msgstr "Banner"
+
+#: includes/admin/class-menu.php:92
+#: templates/admin/company.php:18
+msgid "Company details"
+msgstr "Företagsuppgifter"
+
+#: includes/admin/class-menu.php:93
+#: templates/admin/log.php:18
+msgid "Consent log"
+msgstr "Samtyckeslogg"
+
+#: includes/admin/class-menu.php:174
+msgid "You are not allowed to do this."
+msgstr "Du har inte behörighet att göra detta."
+
+#: includes/admin/class-log-page.php:162
+#: includes/admin/class-overview-page.php:53
+msgid "Invalid request."
+msgstr "Ogiltig begäran."
+
+#. translators: %s: list of plugin names.
+#: includes/class-conflicts.php:116
+#, php-format
+msgid "Revolter Cookies conflicts with %s."
+msgstr "Revolter Cookies krockar med %s."
+
+#. translators: %s: list of plugin names.
+#: includes/class-conflicts.php:121
+#, php-format
+msgid "Two cookie plugins will show two banners and block scripts unpredictably. Deactivate and delete %s, then run a new scan."
+msgstr "Två cookietillägg visar två banners och blockerar skript på ett oförutsägbart sätt. Inaktivera och ta bort %s och kör sedan en ny skanning."
+
+#: includes/class-duration.php:49
+#: templates/admin/overview.php:202
+msgid "Session"
+msgstr "Session"
+
+#: includes/class-duration.php:52
+#: templates/admin/overview.php:203
+msgid "Persistent"
+msgstr "Beständig"
+
+#. translators: %d: number of minutes.
+#: includes/class-duration.php:58
+#, php-format
+msgid "%d minute"
+msgid_plural "%d minutes"
+msgstr[0] "%d minut"
+msgstr[1] "%d minuter"
+
+#. translators: %d: number of hours.
+#: includes/class-duration.php:62
+#, php-format
+msgid "%d hour"
+msgid_plural "%d hours"
+msgstr[0] "%d timme"
+msgstr[1] "%d timmar"
+
+#. translators: %d: number of days.
+#: includes/class-duration.php:66
+#, php-format
+msgid "%d day"
+msgid_plural "%d days"
+msgstr[0] "%d dag"
+msgstr[1] "%d dagar"
+
+#. translators: %d: number of months.
+#: includes/class-duration.php:70
+#, php-format
+msgid "%d month"
+msgid_plural "%d months"
+msgstr[0] "%d månad"
+msgstr[1] "%d månader"
+
+#. translators: %d: number of years.
+#: includes/class-duration.php:74
+#, php-format
+msgid "%d year"
+msgid_plural "%d years"
+msgstr[0] "%d år"
+msgstr[1] "%d år"
+
+#. translators: 1: page number, 2: number of pages, 3: phase, e.g. "checking without consent".
+#: includes/class-scanner.php:64
+#, php-format
+msgid "Scanning page %1$d of %2$d (%3$s)"
+msgstr "Skannar sida %1$d av %2$d (%3$s)"
+
+#: includes/class-scanner.php:65
+msgid "checking without consent"
+msgstr "kontrollerar utan samtycke"
+
+#: includes/class-scanner.php:66
+msgid "checking with consent"
+msgstr "kontrollerar med samtycke"
+
+#: includes/class-scanner.php:67
+msgid "checking cookies set by the server"
+msgstr "kontrollerar cookies som sätts av servern"
+
+#: includes/class-scanner.php:68
+msgid "Saving the results…"
+msgstr "Sparar resultaten…"
+
+#. translators: %s: page URL.
+#: includes/class-scanner.php:70
+#, php-format
+msgid "Could not load %s. It is recorded as failed."
+msgstr "Kunde inte läsa in %s. Sidan registreras som misslyckad."
+
+#. translators: %s: page URL.
+#: includes/class-scanner.php:72
+#, php-format
+msgid "Could not save the result for %s."
+msgstr "Kunde inte spara resultatet för %s."
+
+#: includes/class-scanner.php:73
+msgid "The scan could not be started."
+msgstr "Skanningen kunde inte startas."
+
+#: includes/class-scanner.php:74
+msgid "The scan could not be finished."
+msgstr "Skanningen kunde inte slutföras."
+
+#. translators: 1: pages scanned, 2: pages that failed, 3: cookies declared, 4: cookies that need review.
+#: includes/class-scanner.php:76
+#, php-format
+msgid "Scan complete. Pages scanned: %1$d (failed: %2$d). Cookies declared: %3$d. Needs review: %4$d."
+msgstr "Skanningen är klar. Skannade sidor: %1$d (misslyckade: %2$d). Deklarerade cookies: %3$d. Behöver granskas: %4$d."
+
+#: includes/class-scanner.php:77
+msgid "No page could be scanned, so the cookie list was not changed. Check that the site loads for logged-in administrators and try again."
+msgstr "Ingen sida kunde skannas, så cookielistan har inte ändrats. Kontrollera att webbplatsen laddas för inloggade administratörer och försök igen."
+
+#: includes/class-texts.php:24
+msgid "We use cookies"
+msgstr "Vi använder cookies"
+
+#: includes/class-texts.php:25
+msgid "We use necessary cookies to make this website work. With your consent, we also use cookies for statistics and marketing. You can change or withdraw your consent at any time."
+msgstr "Vi använder nödvändiga cookies för att webbplatsen ska fungera. Med ditt samtycke använder vi även cookies för statistik och marknadsföring. Du kan när som helst ändra eller återkalla ditt samtycke."
+
+#: includes/class-texts.php:26
+msgid "Read our cookie policy"
+msgstr "Läs vår cookiepolicy"
+
+#: includes/class-texts.php:27
+msgid "Accept all"
+msgstr "Godkänn alla"
+
+#: includes/class-texts.php:28
+msgid "Reject all"
+msgstr "Neka alla"
+
+#: includes/class-texts.php:29
+msgid "Customise"
+msgstr "Anpassa"
+
+#: includes/class-texts.php:30
+msgid "Save choices"
+msgstr "Spara val"
+
+#: includes/class-texts.php:31
+msgid "Close"
+msgstr "Stäng"
+
+#: includes/class-texts.php:32
+#: includes/class-texts.php:35
+msgid "Cookie settings"
+msgstr "Cookieinställningar"
+
+#: includes/class-texts.php:33
+msgid "Made with care by"
+msgstr "Skapad med omsorg av"
+
+#: includes/class-texts.php:34
+msgid "Always on"
+msgstr "Alltid på"
+
+#: includes/class-texts.php:36
+msgid "Choose which types of cookies you accept. Necessary cookies cannot be switched off because the website does not work without them."
+msgstr "Välj vilka typer av cookies du godkänner. Nödvändiga cookies kan inte stängas av eftersom webbplatsen inte fungerar utan dem."
+
+#: includes/class-texts.php:49
+msgid "Necessary"
+msgstr "Nödvändiga"
+
+#: includes/class-texts.php:51
+msgid "Preferences"
+msgstr "Inställningar"
+
+#: includes/class-texts.php:53
+msgid "Statistics"
+msgstr "Statistik"
+
+#: includes/class-texts.php:55
+msgid "Marketing"
+msgstr "Marknadsföring"
+
+#: includes/class-texts.php:57
+msgid "Unclassified"
+msgstr "Oklassificerade"
+
+#: includes/class-texts.php:70
+msgid "Required for basic functions such as security and remembering your cookie choice."
+msgstr "Krävs för grundläggande funktioner som säkerhet och att spara ditt cookieval."
+
+#: includes/class-texts.php:72
+msgid "Remember your choices, such as language."
+msgstr "Kommer ihåg dina val, till exempel språk."
+
+#: includes/class-texts.php:74
+msgid "Help us understand how the website is used, through anonymised statistics."
+msgstr "Hjälper oss förstå hur webbplatsen används, via anonymiserad statistik."
+
+#: includes/class-texts.php:76
+msgid "Used to show relevant ads and embedded content such as YouTube."
+msgstr "Används för att visa relevanta annonser och inbäddat innehåll som YouTube."
+
+#: includes/class-texts.php:78
+msgid "Cookies that have not yet been classified."
+msgstr "Cookies som ännu inte har klassificerats."
+
+#. translators: %d: number of cookies.
+#: includes/class-texts.php:90
+#, php-format
+msgid "%d cookie"
+msgid_plural "%d cookies"
+msgstr[0] "%d cookie"
+msgstr[1] "%d cookies"
+
+#: includes/class-texts.php:102
+msgctxt "category in a sentence"
+msgid "preferences"
+msgstr "inställningar"
+
+#: includes/class-texts.php:104
+msgctxt "category in a sentence"
+msgid "statistics"
+msgstr "statistik"
+
+#: includes/class-texts.php:107
+msgctxt "category in a sentence"
+msgid "marketing"
+msgstr "marknadsföring"
+
+#. translators: 1: service name, 2: category in a sentence, e.g. marketing.
+#: includes/class-texts.php:122
+#, php-format
+msgid "This content comes from %1$s, which uses cookies for %2$s. Accept %2$s cookies to show it."
+msgstr "Det här innehållet kommer från %1$s, som använder cookies för %2$s. Godkänn cookies för %2$s för att visa det."
+
+#: includes/class-texts.php:123
+msgid "Accept and show"
+msgstr "Godkänn och visa"
+
+#. translators: %s: service name.
+#: includes/class-texts.php:125
+#, php-format
+msgid "Open on %s"
+msgstr "Öppna på %s"
+
+#: includes/class-texts.php:138
+msgid "Used by the website to provide basic functionality."
+msgstr "Används av webbplatsen för grundläggande funktioner."
+
+#: includes/class-texts.php:140
+msgid "Used by the website to remember your choices."
+msgstr "Används av webbplatsen för att komma ihåg dina val."
+
+#: includes/class-texts.php:142
+msgid "Used by the website for statistics."
+msgstr "Används av webbplatsen för statistik."
+
+#: includes/class-texts.php:144
+msgid "Used by the website for marketing."
+msgstr "Används av webbplatsen för marknadsföring."
+
+#: includes/class-texts.php:146
+msgid "Not yet classified."
+msgstr "Ännu inte klassificerad."
+
+#. translators: 1: company name, 2: organisation number.
+#: includes/class-texts.php:165
+#, php-format
+msgid "%1$s (org. no. %2$s)"
+msgstr "%1$s (org.nr %2$s)"
+
+#: includes/class-texts.php:170
+msgid "What are cookies?"
+msgstr "Vad är cookies?"
+
+#: includes/class-texts.php:171
+msgid "Cookies are small text files that are stored on your device when you visit a website. Some are necessary for the website to work; others are used for statistics or marketing and are only set if you accept them."
+msgstr "Cookies är små textfiler som lagras på din enhet när du besöker en webbplats. Vissa är nödvändiga för att webbplatsen ska fungera, andra används för statistik eller marknadsföring och sätts bara om du godkänner det."
+
+#. translators: %1$s: company name.
+#: includes/class-texts.php:175
+#, php-format
+msgid "How %1$s uses cookies"
+msgstr "Hur %1$s använder cookies"
+
+#. translators: %d: number of cookies.
+#: includes/class-texts.php:177
+#, php-format
+msgid "This website uses %d cookie, divided into the categories below. The list is updated automatically when the website is scanned."
+msgid_plural "This website uses %d cookies, divided into the categories below. The list is updated automatically when the website is scanned."
+msgstr[0] "Den här webbplatsen använder %d cookie, fördelad på kategorierna nedan. Listan uppdateras automatiskt när webbplatsen skannas."
+msgstr[1] "Den här webbplatsen använder %d cookies, fördelade på kategorierna nedan. Listan uppdateras automatiskt när webbplatsen skannas."
+
+#: includes/class-texts.php:180
+msgid "How to manage cookies"
+msgstr "Hur du hanterar cookies"
+
+#: includes/class-texts.php:181
+msgid "You can change your choice at any time using the button below or the cookie settings icon on the website. You can also set your browser to block or delete cookies. Note that some parts of the website may not work correctly if you block necessary cookies."
+msgstr "Du kan när som helst ändra ditt val med knappen nedan eller via ikonen för cookieinställningar på webbplatsen. Du kan också ställa in din webbläsare så att den blockerar eller raderar cookies. Observera att vissa delar av webbplatsen kanske inte fungerar korrekt om du blockerar nödvändiga cookies."
+
+#: includes/class-texts.php:184
+#: includes/elementor/class-full-page-widget.php:81
+#: blocks/editor.js:41
+msgid "Legal basis"
+msgstr "Rättslig grund"
+
+#: includes/class-texts.php:185
+msgid "Necessary cookies are used under the Swedish Electronic Communications Act (2022:482), chapter 9, section 28, and do not require consent. All other cookies are only used with your consent under Article 6(1)(a) of the GDPR."
+msgstr "Nödvändiga cookies används med stöd av lagen (2022:482) om elektronisk kommunikation, 9 kap. 28 §, och kräver inget samtycke. Övriga cookies används endast med ditt samtycke enligt artikel 6.1 a i dataskyddsförordningen (GDPR)."
+
+#: includes/class-texts.php:188
+#: includes/elementor/class-full-page-widget.php:82
+#: blocks/editor.js:42
+msgid "Your rights"
+msgstr "Dina rättigheter"
+
+#. translators: 1: company name, 2: contact email.
+#: includes/class-texts.php:190
+#, php-format
+msgid "You can change or withdraw your consent at any time. If you have questions about how we use cookies, contact %1$s at %2$s. You also have the right to lodge a complaint with the Swedish Authority for Privacy Protection (IMY)."
+msgstr "Du kan när som helst ändra eller återkalla ditt samtycke. Har du frågor om hur vi använder cookies kan du kontakta %1$s på %2$s. Du har också rätt att lämna klagomål till Integritetsskyddsmyndigheten (IMY)."
+
+#: includes/class-texts.php:202
+msgid "Cookie declaration"
+msgstr "Cookiedeklaration"
+
+#. translators: %s: date.
+#: includes/class-texts.php:204
+#, php-format
+msgid "Last updated %s"
+msgstr "Senast uppdaterad %s"
+
+#: includes/class-texts.php:205
+#: templates/admin/overview.php:102
+#: templates/admin/overview.php:187
+msgid "Name"
+msgstr "Namn"
+
+#: includes/class-texts.php:206
+#: templates/admin/overview.php:103
+#: templates/admin/overview.php:194
+msgid "Provider"
+msgstr "Leverantör"
+
+#: includes/class-texts.php:207
+#: templates/admin/overview.php:105
+msgid "Purpose"
+msgstr "Syfte"
+
+#: includes/class-texts.php:208
+#: templates/admin/overview.php:106
+#: templates/admin/overview.php:198
+msgid "Duration"
+msgstr "Varaktighet"
+
+#: includes/class-texts.php:219
+#: includes/elementor/class-full-page-widget.php:83
+#: blocks/editor.js:43
+msgid "Your consent"
+msgstr "Ditt samtycke"
+
+#. translators: 1: accepted categories, 2: date given, 3: consent ID.
+#: includes/class-texts.php:221
+#, php-format
+msgid "You have accepted: %1$s. Given %2$s · ID %3$s"
+msgstr "Du har godkänt: %1$s. Givet %2$s · ID %3$s"
+
+#: includes/class-texts.php:222
+msgid "You have not made a choice yet."
+msgstr "Du har inte gjort något val än."
+
+#: includes/class-texts.php:223
+msgid "Withdraw"
+msgstr "Återkalla"
+
+#: includes/class-texts.php:224
+msgid "Change settings"
+msgstr "Ändra inställningar"
+
+#: includes/class-texts.php:225
+msgid "Change cookie settings"
+msgstr "Ändra cookieinställningar"
+
+#: includes/elementor/class-cookies-table-widget.php:30
+msgid "Cookie table"
+msgstr "Cookietabell"
+
+#: includes/elementor/class-cookies-table-widget.php:61
+msgid "Table"
+msgstr "Tabell"
+
+#: includes/elementor/class-cookies-table-widget.php:68
+msgid "Show settings link"
+msgstr "Visa länk till inställningar"
+
+#: includes/elementor/class-cookies-table-widget.php:70
+#: includes/elementor/class-full-page-widget.php:91
+msgid "Show"
+msgstr "Visa"
+
+#: includes/elementor/class-cookies-table-widget.php:71
+#: includes/elementor/class-full-page-widget.php:92
+msgid "Hide"
+msgstr "Dölj"
+
+#: includes/elementor/class-cookies-table-widget.php:81
+#: includes/elementor/class-full-page-widget.php:103
+msgid "Style"
+msgstr "Stil"
+
+#: includes/elementor/class-cookies-table-widget.php:89
+#: includes/elementor/class-full-page-widget.php:114
+msgid "Heading typography"
+msgstr "Typografi för rubriker"
+
+#: includes/elementor/class-cookies-table-widget.php:97
+#: includes/elementor/class-full-page-widget.php:130
+msgid "Body typography"
+msgstr "Typografi för brödtext"
+
+#: includes/elementor/class-cookies-table-widget.php:104
+#: includes/elementor/class-full-page-widget.php:137
+msgid "Text colour"
+msgstr "Textfärg"
+
+#: includes/elementor/class-full-page-widget.php:42
+msgid "Cookie policy (full page)"
+msgstr "Cookiepolicy (hel sida)"
+
+#: includes/elementor/class-full-page-widget.php:73
+#: blocks/editor.js:37
+msgid "Sections"
+msgstr "Avsnitt"
+
+#: includes/elementor/class-full-page-widget.php:78
+#: blocks/editor.js:38
+msgid "What are cookies"
+msgstr "Vad är cookies"
+
+#: includes/elementor/class-full-page-widget.php:79
+#: blocks/editor.js:39
+msgid "How we use cookies"
+msgstr "Hur vi använder cookies"
+
+#: includes/elementor/class-full-page-widget.php:80
+#: blocks/editor.js:40
+msgid "Managing cookies"
+msgstr "Hantera cookies"
+
+#: includes/elementor/class-full-page-widget.php:121
+msgid "Heading colour"
+msgstr "Rubrikfärg"
+
+#: includes/elementor/class-full-page-widget.php:146
+msgid "Section gap"
+msgstr "Avstånd mellan avsnitt"
+
+#: includes/elementor/class-integration.php:77
+msgid "Table header background"
+msgstr "Bakgrund för tabellhuvud"
+
+#: includes/elementor/class-integration.php:85
+msgid "Border colour"
+msgstr "Kantfärg"
+
+#: includes/elementor/class-integration.php:95
+msgid "Cell padding"
+msgstr "Cellutfyllnad"
+
+#: templates/admin/banner.php:22
+#: templates/admin/company.php:20
+#: templates/admin/overview.php:39
+msgid "Saved."
+msgstr "Sparat."
+
+#: templates/admin/banner.php:28
+msgid "Accent colour"
+msgstr "Accentfärg"
+
+#: templates/admin/banner.php:32
+msgid "Settings button position"
+msgstr "Placering av inställningsknappen"
+
+#: templates/admin/banner.php:35
+msgid "Left"
+msgstr "Vänster"
+
+#: templates/admin/banner.php:36
+msgid "Right"
+msgstr "Höger"
+
+#: templates/admin/banner.php:41
+msgid "Cookie policy page"
+msgstr "Sida för cookiepolicy"
+
+#: templates/admin/banner.php:49
+msgid "Detect automatically"
+msgstr "Identifiera automatiskt"
+
+#. translators: %s: page title.
+#: templates/admin/banner.php:58
+#, php-format
+msgid "Auto-detected: %s"
+msgstr "Identifierad automatiskt: %s"
+
+#: templates/admin/banner.php:66
+msgid "Advanced"
+msgstr "Avancerat"
+
+#: templates/admin/banner.php:69
+msgid "Google Tag Manager category"
+msgstr "Kategori för Google Tag Manager"
+
+#: templates/admin/banner.php:79
+msgid "Manual blocking rules"
+msgstr "Manuella blockeringsregler"
+
+#: templates/admin/banner.php:82
+msgid "One rule per line: pattern | category. Example: hotjar.com | statistics"
+msgstr "En regel per rad: mönster | kategori. Exempel: hotjar.com | statistics"
+
+#: templates/admin/company.php:22
+msgid "These details appear in your cookie declaration."
+msgstr "Uppgifterna visas i din cookiedeklaration."
+
+#: templates/admin/company.php:27
+msgid "Company name"
+msgstr "Företagsnamn"
+
+#: templates/admin/company.php:31
+msgid "Organisation number"
+msgstr "Organisationsnummer"
+
+#: templates/admin/company.php:35
+msgid "Contact email"
+msgstr "E-postadress för kontakt"
+
+#: templates/admin/log.php:22
+#: templates/admin/log.php:30
+msgid "Consent ID"
+msgstr "Samtyckes-ID"
+
+#: templates/admin/log.php:23
+msgid "Start of the consent ID"
+msgstr "Början av samtyckes-ID:t"
+
+#: templates/admin/log.php:24
+msgid "Search"
+msgstr "Sök"
+
+#: templates/admin/log.php:31
+msgid "Date (UTC)"
+msgstr "Datum (UTC)"
+
+#: templates/admin/log.php:32
+msgid "Categories"
+msgstr "Kategorier"
+
+#: templates/admin/log.php:33
+msgid "Policy version"
+msgstr "Policyversion"
+
+#: templates/admin/log.php:34
+msgid "Action"
+msgstr "Åtgärd"
+
+#: templates/admin/log.php:35
+msgid "Language"
+msgstr "Språk"
+
+#: templates/admin/log.php:41
+msgid "No entries."
+msgstr "Inga poster."
+
+#: templates/admin/log.php:58
+msgid "Export as CSV"
+msgstr "Exportera som CSV"
+
+#: templates/admin/log.php:90
+msgid "From"
+msgstr "Från"
+
+#: templates/admin/log.php:92
+msgid "To"
+msgstr "Till"
+
+#: templates/admin/log.php:94
+msgid "Download CSV"
+msgstr "Ladda ner CSV"
+
+#: templates/admin/overview.php:42
+msgid "An item with that name already exists."
+msgstr "Det finns redan en post med det namnet."
+
+#: templates/admin/overview.php:47
+#: templates/admin/overview.php:49
+msgid "Scan your website"
+msgstr "Skanna din webbplats"
+
+#: templates/admin/overview.php:48
+msgid "The scan visits your pages, finds the cookies and scripts they use and builds your cookie declaration."
+msgstr "Skanningen besöker dina sidor, hittar de cookies och skript som används och bygger din cookiedeklaration."
+
+#: templates/admin/overview.php:54
+msgid "Rescan website"
+msgstr "Skanna webbplatsen igen"
+
+#: templates/admin/overview.php:58
+msgid "Last scan failed"
+msgstr "Senaste skanningen misslyckades"
+
+#. translators: 1: date and time, 2: number of pages.
+#: templates/admin/overview.php:61
+#, php-format
+msgid "Last scan: %1$s · %2$d page"
+msgid_plural "Last scan: %1$s · %2$d pages"
+msgstr[0] "Senaste skanning: %1$s · %2$d sida"
+msgstr[1] "Senaste skanning: %1$s · %2$d sidor"
+
+#. translators: %d: number of pages that failed.
+#: templates/admin/overview.php:64
+#, php-format
+msgid "%d failed"
+msgstr "%d misslyckades"
+
+#: templates/admin/overview.php:73
+msgid "Rescan recommended: plugins or the theme have changed since the last scan."
+msgstr "Ny skanning rekommenderas: tillägg eller temat har ändrats sedan den senaste skanningen."
+
+#: templates/admin/overview.php:78
+msgid "Cookies declared"
+msgstr "Deklarerade cookies"
+
+#: templates/admin/overview.php:79
+msgid "Needs review"
+msgstr "Behöver granskas"
+
+#: templates/admin/overview.php:80
+msgid "Scripts blocked until consent"
+msgstr "Skript som blockeras tills samtycke ges"
+
+#: templates/admin/overview.php:81
+#: templates/admin/overview.php:125
+#: templates/admin/overview.php:126
+msgid "Set before consent"
+msgstr "Sätts före samtycke"
+
+#. translators: %d: number of items that need review.
+#: templates/admin/overview.php:90
+#, php-format
+msgid "%d item needs your review. Choose a category for it below."
+msgid_plural "%d items need your review. Choose a category for each below."
+msgstr[0] "%d post behöver granskas. Välj en kategori för den nedan."
+msgstr[1] "%d poster behöver granskas. Välj en kategori för var och en nedan."
+
+#: templates/admin/overview.php:98
+msgid "Cookies and services"
+msgstr "Cookies och tjänster"
+
+#: templates/admin/overview.php:104
+#: templates/admin/overview.php:196
+msgid "Category"
+msgstr "Kategori"
+
+#: templates/admin/overview.php:107
+msgid "Source"
+msgstr "Källa"
+
+#: templates/admin/overview.php:122
+msgid "Domain"
+msgstr "Domän"
+
+#: templates/admin/overview.php:122
+#: templates/admin/overview.php:192
+msgid "Storage"
+msgstr "Lagring"
+
+#. translators: %s: list of page URLs.
+#: templates/admin/overview.php:135
+#, php-format
+msgid "Found on: %s"
+msgstr "Hittades på: %s"
+
+#: templates/admin/overview.php:147
+msgid "Save"
+msgstr "Spara"
+
+#: templates/admin/overview.php:153
+msgid "Edit purpose"
+msgstr "Redigera syfte"
+
+#: templates/admin/overview.php:154
+#: templates/admin/overview.php:211
+msgid "Purpose (Swedish)"
+msgstr "Syfte (svenska)"
+
+#: templates/admin/overview.php:156
+#: templates/admin/overview.php:213
+msgid "Purpose (English)"
+msgstr "Syfte (engelska)"
+
+#: templates/admin/overview.php:158
+msgid "Leave both empty to use the standard description."
+msgstr "Lämna båda tomma för att använda standardbeskrivningen."
+
+#: templates/admin/overview.php:170
+msgid "Delete"
+msgstr "Ta bort"
+
+#: templates/admin/overview.php:182
+msgid "Add cookie manually"
+msgstr "Lägg till cookie manuellt"
+
+#: templates/admin/overview.php:189
+msgid "Type"
+msgstr "Typ"
+
+#: templates/admin/overview.php:191
+msgid "Cookie"
+msgstr "Cookie"
+
+#: templates/admin/overview.php:201
+msgid "Duration unit"
+msgstr "Enhet för varaktighet"
+
+#: templates/admin/overview.php:204
+msgid "minutes"
+msgstr "minuter"
+
+#: templates/admin/overview.php:205
+msgid "hours"
+msgstr "timmar"
+
+#: templates/admin/overview.php:206
+msgid "days"
+msgstr "dagar"
+
+#: templates/admin/overview.php:207
+msgid "months"
+msgstr "månader"
+
+#: templates/admin/overview.php:208
+msgid "years"
+msgstr "år"
+
+#: templates/admin/overview.php:215
+msgid "Third party"
+msgstr "Tredje part"
+
+#: templates/admin/overview.php:216
+msgid "Set by a third party"
+msgstr "Sätts av tredje part"
+
+#: templates/admin/overview.php:218
+msgid "Add cookie"
+msgstr "Lägg till cookie"
+
+#: templates/admin/overview.php:224
+msgid "Blocked until consent"
+msgstr "Blockeras tills samtycke ges"
+
+#: templates/admin/overview.php:232
+msgid "Nothing is blocked yet."
+msgstr "Inget blockeras ännu."
+
+#: templates/admin/overview.php:236
+msgid "Languages"
+msgstr "Språk"
+
+#. translators: %s: name of the multilingual system, for example wpml.
+#: templates/admin/overview.php:240
+#, php-format
+msgid "Language source: %s"
+msgstr "Språkkälla: %s"
+
+#: blocks/editor.js:26
+msgid "Preview unavailable in this editor."
+msgstr "Förhandsgranskning är inte tillgänglig i den här redigeraren."
+
+#: blocks/editor.js:51
+msgid "Settings"
+msgstr "Inställningar"
+
+#: blocks/editor.js:52
+msgid "Show link to change settings"
+msgstr "Visa länk för att ändra inställningar"
+
+#: blocks/cookies-table/block.json
+msgctxt "block title"
+msgid "Cookie table"
+msgstr "Cookietabell"
+
+#: blocks/cookies-table/block.json
+msgctxt "block description"
+msgid "The live cookie declaration table."
+msgstr "Tabellen med den aktuella cookiedeklarationen."
+
+#: blocks/full-page/block.json
+msgctxt "block title"
+msgid "Cookie policy (full page)"
+msgstr "Cookiepolicy (hel sida)"
+
+#: blocks/full-page/block.json
+msgctxt "block description"
+msgid "The full cookie policy with the live cookie declaration."
+msgstr "Hela cookiepolicyn med den aktuella cookiedeklarationen."
+
+#: templates/admin/log.php:36
+msgid "Export"
+msgstr "Exportera"
+
+#: templates/admin/log.php:51
+msgid "Export this entry as CSV"
+msgstr "Exportera den här posten som CSV"
+
+#: templates/admin/log.php:51
+msgid "CSV"
+msgstr "CSV"
+
+#. translators: %1$s: maximum number of rows in one export.
+#: templates/admin/log.php:66
+#, php-format
+msgid "This range has more than %1$s entries. Choose a shorter range, or download the first %1$s."
+msgstr "Perioden har fler än %1$s poster. Välj en kortare period eller ladda ner de första %1$s."
+
+#. translators: %s: maximum number of rows in one export.
+#: templates/admin/log.php:81
+#, php-format
+msgid "Download the first %s"
+msgstr "Ladda ner de första %s"
+
+#: templates/admin/overview.php:36
+msgid "Cookie library could not be loaded; blocking of known services is disabled."
+msgstr "Cookiebiblioteket kunde inte läsas in. Blockering av kända tjänster är avstängd."

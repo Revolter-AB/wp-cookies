@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<ruleset name="Revolter Cookies">
+	<description>Coding standards for Revolter Cookies.</description>
+	<file>.</file>
+	<exclude-pattern>vendor/*</exclude-pattern>
+	<exclude-pattern>node_modules/*</exclude-pattern>
+	<exclude-pattern>tests/.wp-core/*</exclude-pattern>
+	<exclude-pattern>docs/*</exclude-pattern>
+	<exclude-pattern>build/*</exclude-pattern>
+	<exclude-pattern>languages/*</exclude-pattern>
+	<arg name="extensions" value="php"/>
+	<arg name="colors"/>
+	<arg value="ps"/>
+	<config name="testVersion" value="7.4-"/>
+	<config name="minimum_wp_version" value="6.5"/>
+	<rule ref="WordPress"/>
+	<rule ref="PHPCompatibilityWP"/>
+	<rule ref="WordPress.WP.I18n">
+		<properties>
+			<property name="text_domain" type="array">
+				<element value="revolter-cookies"/>
+			</property>
+		</properties>
+	</rule>
+	<rule ref="WordPress.NamingConventions.PrefixAllGlobals">
+		<exclude name="WordPress.NamingConventions.PrefixAllGlobals.ShortPrefixPassed"/>
+		<properties>
+			<property name="prefixes" type="array">
+				<element value="RevolterCookies"/>
+				<element value="revolter_cookies"/>
+				<element value="REVOLTER_COOKIES"/>
+				<element value="rc_"/>
+			</property>
+		</properties>
+	</rule>
+</ruleset>

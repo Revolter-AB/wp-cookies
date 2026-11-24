@@ -18,6 +18,11 @@ defined( 'ABSPATH' ) || exit;
 class Updater {
 
 	/**
+	 * Plugin-update-checker's Api::REQUIRE_RELEASE_ASSETS: no fallback to the source archive.
+	 */
+	const REQUIRE_RELEASE_ASSETS = 2;
+
+	/**
 	 * Update checker instance, if built.
 	 *
 	 * @var object|null
@@ -42,11 +47,24 @@ class Updater {
 			$this->checker = $factory::buildUpdateChecker( $repo, REVOLTER_COOKIES_FILE, 'revolter-cookies' );
 			$api           = $this->checker->getVcsApi();
 			if ( $api && method_exists( $api, 'enableReleaseAssets' ) ) {
-				$api->enableReleaseAssets( '/revolter-cookies\.zip$/' );
+				// Only the built zip: GitHub's source archive has no vendor/ and would break the plugin.
+				$api->enableReleaseAssets( '/revolter-cookies\.zip$/', self::REQUIRE_RELEASE_ASSETS );
 			}
+			// Updates come from published releases only, never from a bare tag or a branch.
+			$this->checker->addFilter( 'vcs_update_detection_strategies', array( __CLASS__, 'releases_only' ) );
 		} catch ( \Throwable $e ) {
 			$this->checker = null;
 		}
+	}
+
+	/**
+	 * Keep only the latest-release strategy.
+	 *
+	 * @param array $strategies Strategy callbacks keyed by name.
+	 * @return array
+	 */
+	public static function releases_only( $strategies ): array {
+		return is_array( $strategies ) ? array_intersect_key( $strategies, array( 'latest_release' => true ) ) : array();
 	}
 
 	/**
